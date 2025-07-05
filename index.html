@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HubPortMaster - Portal de Jogos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎮 HubPortMaster</h1>
+            <p>Sua central de jogos PortMaster</p>
+        </div>
+
+        <div class="search-container">
+            <input type="text" id="searchInput" class="search-box" placeholder="🔍 Pesquisar jogos...">
+        </div>
+
+        <div class="highlights-section" id="highlightsSection">
+            <h2 class="section-title">⭐ Destaques</h2>
+            <div id="highlightsGrid" class="highlights-grid">
+            </div>
+        </div>
+
+        <div class="games-section">
+            <h2 class="section-title">🎯 Todos os Jogos</h2>
+            <div id="gamesGrid" class="games-grid">
+            </div>
+        </div>
+
+        <div id="noResults" class="no-results" style="display: none;">
+            Nenhum jogo encontrado com esse nome 😔
+        </div>
+
+        <div id="loading" class="loading">
+            Carregando jogos... 🎮
+        </div>
+
+        <div class="footer">
+            <h3>⚠️ Avisos Importantes</h3>
+
+            <div class="disclaimer">
+                <p><strong>📁 Sobre os Downloads:</strong></p>
+                <p>Os links de download disponibilizados nesta página são de arquivos encontrados publicamente na
+                    internet. O HubPortMaster não hospeda nem distribui os arquivos diretamente.</p>
+                <p><strong>🚫 Contra Pirataria:</strong> Esta página é totalmente contra a pirataria. Incentivamos
+                    sempre a compra dos jogos originais para apoiar os desenvolvedores.</p>
+            </div>
+
+            <p><strong>🎮 Objetivo:</strong> Esta página tem como objetivo facilitar o acesso a jogos compatíveis com
+                PortMaster, sempre respeitando os direitos autorais.</p>
+
+            <p style="margin-top: 25px;">
+                Encontrou algum problema com imagens ou links? Nos avise no nosso canal do Discord:
+                <a href="https://discord.gg/WX9Ye9Jmqa" target="_blank"
+                    style="color: #74b9ff; text-decoration: none; font-weight: bold;">
+                    Discord do HubPortMaster
+                </a>
+            </p>
+
+            <div class="copyright">
+                <p>&copy; 2024 HubPortMaster. Todos os direitos reservados.</p>
+                <p>Os jogos listados pertencem aos seus respectivos desenvolvedores e editoras.</p>
+            </div>
+        </div>
+    </div>
+
+    <button class="support-btn" onclick="openSupportModal()">
+        💖 Apoiar o Projeto
+    </button>
+
+    <div id="supportModal" class="support-modal">
+        <div class="support-modal-content">
+            <span class="support-close" onclick="closeSupportModal()">&times;</span>
+            <h3>💖 Apoie o HubPortMaster</h3>
+            <p>Gostou do projeto? Considere fazer uma doação via PIX para ajudar a manter esta página funcionando!</p>
+            <p>Sua contribuição é muito importante para manter o projeto ativo e sempre atualizado.</p>
+
+            <div class="pix-key" id="pixKey">
+                smurfpidiotto@gmail.com
+            </div>
+
+            <button class="copy-btn" onclick="copyPixKey()">
+                📋 Copiar Chave PIX
+            </button>
+
+            <p style="font-size: 0.9rem; margin-top: 20px; opacity: 0.8;">
+                Qualquer valor é bem-vindo! 🙏
+            </p>
+        </div>
+    </div>
+
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <img id="modalImage" class="modal-image" src="" alt="">
+            </div>
+            <div class="modal-body">
+                <h2 id="modalTitle" class="modal-title"></h2>
+                <p id="modalDescription" class="modal-description"></p>
+                <div id="modalDetails" class="modal-details"></div>
+                <a id="downloadButton" class="download-button" href="#" target="_blank">
+                    📥 Download do Jogo
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
