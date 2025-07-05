@@ -489,3 +489,15 @@ body {
         margin: 10% auto;
     }
 }
+
+.download-password-notice {
+    margin-top: 15px; /* Espaço acima do aviso */
+    font-size: 0.95rem; /* Tamanho da fonte um pouco menor */
+    color: #f39c12; /* Cor de destaque (laranja/amarelo) para o aviso */
+    font-weight: bold; /* Deixa o texto em negrito */
+    text-align: center; /* Centraliza o texto */
+    padding: 8px 15px;
+    border: 1px solid #f39c12; /* Borda para destacar */
+    border-radius: 5px;
+    background-color: rgba(243, 156, 18, 0.1); /* Fundo levemente transparente */
+}
