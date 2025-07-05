@@ -167,8 +167,79 @@
             "developer": "",
             "releaseDate": "2024-05-15",
             "downloadLink": "https://www.4shared.com/zip/YFGDckG9ku/Undertale.html",
+            "highlight": false
+        },
+        {
+            "name": "The Friends of Ringo Ishikawa",
+            "description": "Friends of Ringo Ishikawa é uma mistura de beat-em up e slice of life no Japão de meados dos anos 80. Assuma o controle de Ringo enquanto ele vive sua última estação de outono antes da formatura do ensino médio.",
+            "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/friendsofringo/screenshot.png",
+            "genre": "Ação",
+            "size": "153,9Mb",
+            "version": "",
+            "developer": "",
+            "releaseDate": "2024-05-15",
+            "downloadLink": "https://www.4shared.com/zip/Q5h2v3ssku/The_Friends_of_Ringo_Ishikawa.html",
             "highlight": true
+        },
+        {
+            "name": "Starship (Star Fox 64)",
+            "description": "Um port de origem do Star Fox 64. Starship apresenta melhorias extensas e significativas em relação ao jogo original, como desempenho aprimorado, aumento na taxa de quadros, suporte nativo para ultra-widescreen e amplo suporte a mods (especialmente em comparação com versões emuladas do original), entre outros recursos.",
+            "image": "https://raw.githubusercontent.com/PortsMaster-MV/PortMaster-MV-New/main/ports/starship/screenshot.png",
+            "genre": "Ação",
+            "size": "153,9Mb",
+            "version": "",
+            "developer": "",
+            "releaseDate": "2024-05-15",
+            "downloadLink": "https://www.4shared.com/zip/98zS1BqAjq/Starship__Star_Fox_64_.html?",
+            "highlight": false
+        },
+        {
+            "name": "OmegaBot",
+            "description": "Um jogo de ação side-scrolling com chefes robóticos desafiadores. Desvie de perigos metálicos, adquira armas poderosas e abra caminho em um mundo destruído, cheio de máquinas mortais, onde ficar sem energia significa derrota.",
+            "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/omegabot/screenshot.png",
+            "genre": "Ação",
+            "size": "155,9Mb",
+            "version": "",
+            "developer": "",
+            "releaseDate": "2024-05-15",
+            "downloadLink": "https://www.4shared.com/zip/tiOjAVNtjq/OmegaBot.html?",
+            "highlight": false
+        },
+        {
+            "name": "NO-SKIN",
+            "description": "NO-Skin é um jogo roguelike caracterizado por uma atmosfera de terror e uma jogabilidade fluida, porém complexa. Enfrente os horrores que a casa esconde em cada esquina e descubra quem realmente é o Homem Sem Pele!",
+            "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/noskin/screenshot.png",
+            "genre": "Ação",
+            "size": "69,9Mb",
+            "version": "",
+            "developer": "",
+            "releaseDate": "2024-05-15",
+            "downloadLink": "https://www.4shared.com/zip/B-y_Nl1wge/NO-SKIN.html?",
+            "highlight": false
+        },
+        {
+            "name": "Loop Hero",
+            "description": "O Lich lançou o mundo em um ciclo atemporal e mergulhou seus habitantes em um caos sem fim. Empunhe um baralho expansivo de cartas místicas para posicionar inimigos, construções e terrenos ao longo de cada ciclo de expedição único para o bravo herói.",
+            "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/loophero/screenshot.png",
+            "genre": "Ação",
+            "size": "245,6Mb",
+            "version": "",
+            "developer": "",
+            "releaseDate": "2024-05-15",
+            "downloadLink": "https://www.4shared.com/zip/ph0lxs4cfa/Loop_Hero.html?",
+            "highlight": false
+        },
+        {
+            "name": "Hojiya",
+            "description": "Hojiya é um jogo de plataforma e aventura 2D ambientado em um mundo costeiro de fantasia, onde a luz do dia será crucial para o nosso protagonista, o garoto-planta. HISTÓRIA: Nogaru e Iara são dois irmãos corajosos que explorarão florestas, selvas e desertos; coletando artefatos, desafiando criaturas astutas e derrotando vilões perigosos, encontrarão suas origens nesta emocionante aventura por terras maravilhosas para descobrir o destino de uma cultura perdida. Resolva mistérios e ajude as pessoas a salvar suas ilhas da destruição iminente causada pela corporação maligna Xiphos. RECURSOS: Muitos itens para procurar, coletar e trocar! Diversas criaturas e inimigos, além de conhecer os habitantes deste mundo.",
+            "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/hojiya/screenshot.png",
+            "genre": "Ação",
+            "size": "199,6Mb",
+            "version": "",
+            "developer": "",
+            "releaseDate": "2024-05-15",
+            "downloadLink": "https://www.4shared.com/zip/5AN6Y-Jjjq/Hojiya.html?",
+            "highlight": false
         }
     ]
-    
 }
