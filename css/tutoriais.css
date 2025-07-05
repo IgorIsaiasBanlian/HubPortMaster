@@ -1,0 +1,76 @@
+/* --- Estilos para o conteúdo das páginas (Tutoriais e Sobre) --- */
+.page-content {
+    background-color: #2c3e50; /* Mesmo azul escuro do fundo geral */
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    max-width: 900px;
+    color: #ecf0f1; /* Cor do texto para contraste */
+}
+
+.page-title {
+    font-size: 2.5rem;
+    color: #74b9ff; /* Cor de destaque similar ao do link do Discord */
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #74b9ff;
+    padding-bottom: 10px;
+}
+
+.page-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.tutorial-item {
+    background-color: #34495e; /* Um tom mais escuro para os itens de tutorial */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tutorial-item h3 {
+    color: #74b9ff;
+    margin-bottom: 10px;
+}
+
+.tutorial-item p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.tutorial-link {
+    display: inline-block;
+    background-color: #74b9ff;
+    color: #2c3e50; /* Texto escuro no botão */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.tutorial-link:hover {
+    background-color: #5fa2e7; /* Um tom mais escuro no hover do botão */
+}
+
+/* Garante que o footer permaneça na parte inferior das novas páginas, se o conteúdo for curto */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    min-height: calc(100vh - 150px); /* Ajuste conforme a altura do seu navbar e footer */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 50px; /* Espaço para o footer */
+}
+
+.footer {
+    margin-top: auto; /* Empurra o footer para baixo */
+}
