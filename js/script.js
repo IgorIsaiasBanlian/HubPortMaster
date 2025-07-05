@@ -1,12 +1,19 @@
 let allGames = [];
 let filteredGames = [];
 
+
 // Função para carregar dados dos jogos
 async function loadGames() {
     try {
         const response = await fetch('games.json'); // Carrega o arquivo JSON
         const data = await response.json();
-        allGames = data.games;
+        
+        // Gerar IDs dinamicamente
+        allGames = data.games.map((game, index) => ({
+            ...game, // Copia todas as propriedades existentes do jogo
+            id: index + 1 // Adiciona um ID baseado no índice (começando do 1)
+        }));
+
         filteredGames = allGames;
         renderHighlights();
         renderGames();
