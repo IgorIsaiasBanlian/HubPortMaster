@@ -1,21 +1,25 @@
-🎮 HubPortMaster
-Bem-vindo ao HubPortMaster! Sua central não oficial para explorar e descobrir jogos compatíveis com o PortMaster. Este projeto visa facilitar o acesso a uma vasta coleção de títulos, oferecendo uma interface limpa e intuitiva para que você encontre sua próxima aventura.
 
-✨ Recursos
+# 🎮 HubPortMaster
 
-Listagem de Jogos Dinâmica: Explore uma vasta biblioteca de jogos com detalhes como gênero, tamanho, versão e desenvolvedor.
+Bem-vindo ao **HubPortMaster**!  
+Sua central *não oficial* para explorar e descobrir jogos compatíveis com o **PortMaster**.  
+Este projeto visa facilitar o acesso a uma vasta coleção de títulos, oferecendo uma interface limpa e intuitiva para que você encontre sua próxima aventura.
 
-Destaques: Uma seção dedicada aos jogos mais populares ou recomendados.
+---
 
-Pesquisa Instantânea: Encontre rapidamente qualquer jogo digitando o nome ou gênero na barra de pesquisa.
+## ✨ Recursos
 
-Detalhes Completos: Clique em qualquer jogo para ver informações detalhadas e o link para download.
+- **Listagem de Jogos Dinâmica**: Biblioteca com detalhes como gênero, tamanho, versão e desenvolvedor.  
+- **Destaques**: Seção especial com os jogos mais populares ou recomendados.  
+- **Pesquisa Instantânea**: Encontre rapidamente jogos pelo nome ou gênero.  
+- **Detalhes Completos**: Clique em um jogo para ver mais informações e link para download.  
+- **Design Responsivo**: Compatível com desktop, tablet e dispositivos móveis.  
+- **Aviso de Suporte**: Botão flutuante para doações via PIX.  
+- **Feedback Direto**: Relate links ou imagens quebradas via Discord no modal de detalhes.
 
-Design Responsivo: A página se adapta perfeitamente a diferentes tamanhos de tela (desktop, tablet, mobile).
+---
 
-Aviso de Suporte: Botão flutuante para apoiar o desenvolvimento do projeto via PIX.
-
-Feedback Direto: Relate problemas de links ou imagens diretamente do modal de detalhes do jogo via Discord.
+## 📁 Estrutura do Projeto
 
 
 HubPortMaster/
@@ -25,33 +29,34 @@ HubPortMaster/
 └── games.json        # Base de dados dos jogos (informações e links)
 
 🤝 Contribuição
-Contribuições são muito bem-vindas! Se você encontrou um bug, tem uma sugestão de melhoria ou quer adicionar novos jogos, sinta-se à vontade para abrir uma issue ou enviar um pull request.
+Contribuições são muito bem-vindas!
 
-Para novos jogos, por favor, certifique-se de que:
+Se você encontrou um bug, tem uma sugestão ou quer adicionar novos jogos, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-As informações estejam corretas e completas.
+Para adicionar novos jogos:
 
-As imagens (se forem URLs externas) sejam de fontes confiáveis ou, preferencialmente, sejam adicionadas localmente na pasta images/ (se criada).
+Certifique-se de que as informações estejam corretas e completas.
 
-Os links de download sejam funcionais e respeitem o objetivo do projeto.
+Prefira imagens locais na pasta images/ ou utilize URLs confiáveis.
+
+Links de download devem estar funcionando e condizentes com os propósitos do projeto.
 
 ⚠️ Avisos Importantes
-Sobre os Downloads: Os links de download disponibilizados nesta página são de arquivos encontrados publicamente na internet. O HubPortMaster não hospeda nem distribui os arquivos diretamente.
+Sobre os Downloads: Os links disponíveis são de arquivos já públicos na internet. O HubPortMaster não hospeda nem distribui os arquivos diretamente.
 
-Contra Pirataria: Esta página é totalmente contra a pirataria. Incentivamos sempre a compra dos jogos originais para apoiar os desenvolvedores.
+Contra Pirataria: Somos contra a pirataria. Sempre incentive a compra dos jogos originais.
 
-Objetivo: Esta página tem como objetivo facilitar o acesso a jogos compatíveis com PortMaster, sempre respeitando os direitos autorais e as licenças dos jogos.
+Objetivo: Facilitar o acesso a jogos compatíveis com o PortMaster, respeitando direitos autorais e licenças.
 
 💖 Apoie o Projeto
-Se você gostou do HubPortMaster e deseja apoiar o desenvolvimento e a manutenção, considere fazer uma doação via PIX. Qualquer contribuição é muito bem-vinda!
-
+Se você gostou do projeto e quer ajudar no desenvolvimento e manutenção:
+Considere fazer uma doação via PIX!
+Qualquer contribuição é muito bem-vinda 🙌
 
 ✉️ Contato / Feedback
-Encontrou algum problema com imagens ou links quebrados? Tem sugestões ou dúvidas?
-Nosso canal oficial para feedback e discussões é o Discord:
-
+Encontrou links quebrados, imagens fora do ar ou tem sugestões?
+Entre em contato pelo nosso canal oficial no Discord.
 
 📄 Licença
-Este projeto está licenciado sob a Licença MIT. Veja o arquivo LICENSE para mais detalhes.
-
-Feito com ❤️ por Pidiotto
+Este projeto está licenciado sob a Licença MIT.
+Veja o arquivo LICENSE para mais informações.
