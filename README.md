@@ -21,12 +21,13 @@ Este projeto visa facilitar o acesso a uma vasta coleção de títulos, oferecen
 
 ## 📁 Estrutura do Projeto
 
-
+```
 HubPortMaster/
 ├── index.html        # Estrutura principal da página
 ├── style.css         # Estilos CSS da aplicação
 ├── script.js         # Lógica JavaScript e interatividade
 └── games.json        # Base de dados dos jogos (informações e links)
+```
 
 🤝 Contribuição
 Contribuições são muito bem-vindas!
