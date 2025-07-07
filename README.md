@@ -28,7 +28,7 @@ HubPortMaster/
 ├── script.js         # Lógica JavaScript e interatividade
 └── games.json        # Base de dados dos jogos (informações e links)
 ```
-
+---
 🤝 Contribuição
 Contribuições são muito bem-vindas!
 
@@ -42,12 +42,16 @@ Prefira imagens locais na pasta images/ ou utilize URLs confiáveis.
 
 Links de download devem estar funcionando e condizentes com os propósitos do projeto.
 
+---
+
 ⚠️ Avisos Importantes
 Sobre os Downloads: Os links disponíveis são de arquivos já públicos na internet. O HubPortMaster não hospeda nem distribui os arquivos diretamente.
 
 Contra Pirataria: Somos contra a pirataria. Sempre incentive a compra dos jogos originais.
 
 Objetivo: Facilitar o acesso a jogos compatíveis com o PortMaster, respeitando direitos autorais e licenças.
+
+---
 
 💖 Apoie o Projeto
 Se você gostou do projeto e quer ajudar no desenvolvimento e manutenção:
