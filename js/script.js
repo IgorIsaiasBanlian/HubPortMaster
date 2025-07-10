@@ -9,7 +9,9 @@ async function loadGames() {
         const data = await response.json();
         
         // Gerar IDs dinamicamente
-        allGames = data.games.map((game, index) => ({
+        const reversedGames = data.games.slice().reverse(); // Cria uma cópia invertida
+        allGames = reversedGames.map((game, index) => ({
+
             ...game, // Copia todas as propriedades existentes do jogo
             id: index + 1 // Adiciona um ID baseado no índice (começando do 1)
         }));
