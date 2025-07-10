@@ -320,5 +320,19 @@
       "downloadLink": "https://www.4shared.com/zip/8-jnZmHPku/Death_Ray_Manta.html?",
       "highlight": false
     }
+        ,
+    {
+      "id": 18,
+      "name": "Gravity Circuit",
+      "description": "Gravity Circuit - um jogo de plataforma 2D cheio de ação e chamativo, no espírito dos clássicos dos consoles.,
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/gravitycircuit/screenshot.png",
+      "genre": "Plataforma",
+      "size": "300,2Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/lBLq_lGCge/Gravity_Circuit.html?",
+      "highlight": false
+    }
   ]
 }
