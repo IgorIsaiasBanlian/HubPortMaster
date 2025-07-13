@@ -348,5 +348,19 @@
       "downloadLink": "https://www.4shared.com/zip/GKclGG6Kku/Forager__M-Language_.html?",
       "highlight": false
     }
+                ,
+    {
+      "id": 18,
+      "name": "Deltarune",
+      "description": "Mergulhe na história paralela de UNDERTALE! Lute ou se salve em batalhas cheias de ação enquanto explora um mundo misterioso ao lado de um elenco cativante de personagens novos e conhecidos. Os capítulos 1 a 4 estarão disponíveis no lançamento, com mais atualizações gratuitas planejadas!",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/deltarune/screenshot.png",
+      "genre": "RPG",
+      "size": "171Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/Dipy2YDkjq/Deltarune_Eng.html?",
+      "highlight": false
+    }
   ]
 }
