@@ -334,5 +334,19 @@
       "downloadLink": "https://www.4shared.com/zip/lBLq_lGCge/Gravity_Circuit.html?",
       "highlight": false
     }
+            ,
+    {
+      "id": 18,
+      "name": "Forager",
+      "description": "Forager é um jogo de mundo aberto 2D inspirado em jogos de exploração, agricultura e artesanato, como Stardew Valley, Terraria e Zelda!",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/forager/screenshot.png",
+      "genre": "Aventura",
+      "size": "93,5Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/GKclGG6Kku/Forager__M-Language_.html?",
+      "highlight": false
+    }
   ]
 }
