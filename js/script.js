@@ -123,7 +123,7 @@ function openModal(gameId) {
         <small style="color: #636e72; font-size: 0.9rem;">
             Encontrou um link quebrado ou imagem ausente neste jogo?
             <br>
-            Por favor, <a href="https://discord.gg/WX9Ye9Jmqa" target="_blank" style="color: #667eea; text-decoration: none; font-weight: bold;">avise-nos no Discord</a>!
+            Por favor, <a href="https://discord.gg/tN8vr5Ea5X" target="_blank" style="color: #667eea; text-decoration: none; font-weight: bold;">avise-nos no Discord</a>!
         </small>
     `;
 
