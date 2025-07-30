@@ -405,5 +405,18 @@
       "downloadLink": "https://www.4shared.com/zip/BCEYAe4Ifa/Victory_Heat_Rally.html?",
  "highlight": false
     }
+                  ,
+    {
+      "name": "Friday Night Funkin",
+      "description": "Friday Night Funkin' é um jogo de ritmo musical onde você compete em batalhas musicais de estilo livre. Pressione as setas do teclado no ritmo da música para superar seus oponentes e curtir as batidas incríveis!",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/fridaynightfunkin/screenshot.png",
+      "genre": "Rtm",
+      "size": "292.9Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/jhB1V4fOge/fridaynightfunkin.html?",
+ "highlight": false
+    }
   ]
 }
