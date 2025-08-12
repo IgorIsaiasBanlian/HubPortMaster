@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HubPortMaster - Portal de Jogos</title>
+    <!-- Incluindo os arquivos de estilo -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/navbar.css">
-
 </head>
 
 <body>
+    <!-- Barra de Navegação -->
     <nav class="navbar">
         <div class="nav-brand">
             <a href="index.html">🎮 HubPortMaster</a>
@@ -23,69 +23,66 @@
     </nav>
 
     <div class="container">
-
-
+        <!-- Seção de informações do topo (Discord e YouTube) -->
         <div class="info-top">
-    <!-- Aviso do Discord -->
-    <div class="discord-info info-box">
-        <div class="discord-header">
-            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord" class="discord-icon">
-            <p class="discord-text">Participe do nosso Discord para novidades, suporte e comunidade:</p>
+            <!-- Aviso do Discord -->
+            <div class="discord-info info-box">
+                <div class="discord-header">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord" class="discord-icon">
+                    <p class="discord-text">Participe do nosso Discord para novidades, suporte e comunidade:</p>
+                </div>
+                <a href="https://discord.com/invite/tN8vr5Ea5X" target="_blank" class="discord-link">
+                    👉 Entrar no Discord
+                </a>
+            </div>
+
+            <!-- Vídeo do YouTube -->
+            <div class="youtube-video info-box">
+                <iframe width="320" height="180" src="https://www.youtube.com/embed/Glt_hMI6X3s"
+                    title="YouTube video" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
         </div>
-        <a href="https://discord.com/invite/tN8vr5Ea5X" target="_blank" class="discord-link">
-            👉 Entrar no Discord
-        </a>
-    </div>
 
-    <!-- Vídeo do YouTube -->
-    <div class="youtube-video info-box">
-        <iframe width="320" height="180" src="https://www.youtube.com/embed/Glt_hMI6X3s" 
-            title="YouTube video" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen></iframe>
-    </div>
-</div>
-
+        <!-- Barra de Pesquisa -->
         <div class="search-container">
             <input type="text" id="searchInput" class="search-box" placeholder="🔍 Pesquisar jogos...">
         </div>
 
-
-
+        <!-- Seção de Destaques -->
         <div class="highlights-section" id="highlightsSection">
             <h2 class="section-title">⭐ Destaques</h2>
             <div id="highlightsGrid" class="highlights-grid">
+                <!-- Conteúdo gerado dinamicamente pelo JavaScript -->
             </div>
         </div>
 
+        <!-- Seção de Todos os Jogos -->
         <div class="games-section">
             <h2 class="section-title">🎯 Todos os Jogos</h2>
             <div id="gamesGrid" class="games-grid">
+                <!-- Conteúdo gerado dinamicamente pelo JavaScript -->
             </div>
         </div>
 
+        <!-- Mensagens de status -->
         <div id="noResults" class="no-results" style="display: none;">
             Nenhum jogo encontrado com esse nome 😔
         </div>
-
         <div id="loading" class="loading">
             Carregando jogos... 🎮
         </div>
 
+        <!-- Rodapé -->
         <div class="footer">
             <h3>⚠️ Avisos Importantes</h3>
-
             <div class="disclaimer">
                 <p><strong>📁 Sobre os Downloads:</strong></p>
-                <p>Os links de download disponibilizados nesta página são de arquivos encontrados publicamente na
-                    internet. O HubPortMaster não hospeda nem distribui os arquivos diretamente.</p>
-                <p><strong>🚫 Contra Pirataria:</strong> Esta página é totalmente contra a pirataria. Incentivamos
-                    sempre a compra dos jogos originais para apoiar os desenvolvedores.</p>
+                <p>Os links de download disponibilizados nesta página são de arquivos encontrados publicamente na internet. O HubPortMaster não hospeda nem distribui os arquivos diretamente.</p>
+                <p><strong>🚫 Contra Pirataria:</strong> Esta página é totalmente contra a pirataria. Incentivamos sempre a compra dos jogos originais para apoiar os desenvolvedores.</p>
             </div>
-
-            <p><strong>🎮 Objetivo:</strong> Esta página tem como objetivo facilitar o acesso a jogos compatíveis com
-                PortMaster, sempre respeitando os direitos autorais.</p>
-
+            <p><strong>🎮 Objetivo:</strong> Esta página tem como objetivo facilitar o acesso a jogos compatíveis com PortMaster, sempre respeitando os direitos autorais.</p>
             <p style="margin-top: 25px;">
                 Encontrou algum problema com imagens ou links? Nos avise no nosso canal do Discord:
                 <a href="https://discord.gg/tN8vr5Ea5X" target="_blank"
@@ -93,7 +90,6 @@
                     Discord do HubPortMaster
                 </a>
             </p>
-
             <div class="copyright">
                 <p>&copy; 2024 HubPortMaster. Todos os direitos reservados.</p>
                 <p>Os jogos listados pertencem aos seus respectivos desenvolvedores e editoras.</p>
@@ -101,35 +97,35 @@
         </div>
     </div>
 
+    <!-- Botão de Apoio -->
     <button class="support-btn" onclick="openSupportModal()">
         💖 Apoiar o Projeto
     </button>
 
+    <!-- Modal de Apoio -->
     <div id="supportModal" class="support-modal">
         <div class="support-modal-content">
             <span class="support-close" onclick="closeSupportModal()">&times;</span>
             <h3>💖 Apoie o HubPortMaster</h3>
             <p>Gostou do projeto? Considere fazer uma doação via PIX para ajudar a manter esta página funcionando!</p>
             <p>Sua contribuição é muito importante para manter o projeto ativo e sempre atualizado.</p>
-
             <div class="pix-key" id="pixKey">
                 smurfpidiotto@gmail.com
             </div>
-
             <button class="copy-btn" onclick="copyPixKey()">
                 📋 Copiar Chave PIX
             </button>
-
             <p style="font-size: 0.9rem; margin-top: 20px; opacity: 0.8;">
                 Qualquer valor é bem-vindo! 🙏
             </p>
         </div>
     </div>
 
+    <!-- Modal de Detalhes do Jogo -->
     <div id="gameModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <span class="close">&times;</span>
+                <span class="close" onclick="closeGameModal()">&times;</span>
                 <img id="modalImage" class="modal-image" src="" alt="">
             </div>
             <div class="modal-body">
@@ -142,10 +138,24 @@
                 <p class="download-password-notice">
                     Senha para descompactar: pidiotto
                 </p>
+                <div id="gameFeedbackNotice" class="text-center text-sm text-gray-500 mt-6"></div>
             </div>
         </div>
     </div>
 
+    <!-- Modal de Inscrição no YouTube -->
+    <div id="subscribeModal" class="subscribe-modal hidden">
+        <div class="subscribe-content">
+            <h2>🎮 Antes de baixar...</h2>
+            <p>Ajude o projeto se inscrevendo no nosso canal no YouTube!</p>
+            <a id="subscribeBtn" href="https://www.youtube.com/@PidiottoRetroHub?sub_confirmation=1" target="_blank" class="subscribe-btn">
+                ✅ Inscrever-se
+            </a>
+            <button id="continueBtn" class="continue-btn">Continuar para o Download</button>
+        </div>
+    </div>
+
+    <!-- Incluindo o arquivo JavaScript -->
     <script src="js/script.js"></script>
 </body>
 
