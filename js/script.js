@@ -83,7 +83,10 @@ function openModal(gameId) {
     document.getElementById('modalImage').src = game.image;
     document.getElementById('modalTitle').textContent = game.name;
     document.getElementById('modalDescription').textContent = game.description;
-    document.getElementById('downloadButton').href = game.downloadLink;
+    document.getElementById('downloadButton').onclick = () => {
+    showSubscribePrompt(game.downloadLink);
+};
+
     
     const details = document.getElementById('modalDetails');
     details.innerHTML = `
@@ -134,6 +137,37 @@ function openModal(gameId) {
 function closeModal() {
     document.getElementById('gameModal').style.display = 'none';
 }
+
+function showSubscribePrompt(downloadLink) {
+    // Cria o modal temporário
+    const modal = document.createElement('div');
+    modal.className = 'subscribe-modal';
+    modal.innerHTML = `
+        <div class="subscribe-content">
+            <h2>🎮 Antes de baixar...</h2>
+            <p>Ajude o projeto se inscrevendo no nosso canal no YouTube!</p>
+            <a href="https://www.youtube.com/@PidiottoRetroHub?sub_confirmation=1" 
+               target="_blank" 
+               class="subscribe-btn">✅ Inscrever-se</a>
+            <button class="continue-btn">Continuar para o Download</button>
+        </div>
+    `;
+
+    // Adiciona o modal na tela
+    document.body.appendChild(modal);
+
+    // Evento para continuar para o download
+    modal.querySelector('.continue-btn').onclick = () => {
+        window.open(downloadLink, '_blank');
+        modal.remove();
+    };
+
+    // Fechar clicando fora
+    modal.onclick = (e) => {
+        if (e.target === modal) modal.remove();
+    };
+}
+
 
 // Função de pesquisa
 function searchGames() {
@@ -216,3 +250,4 @@ setTimeout(() => {
 
 // Inicializar a aplicação
 loadGames();
+
