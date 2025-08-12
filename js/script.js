@@ -1,39 +1,123 @@
 let allGames = [];
 let filteredGames = [];
+const loading = document.getElementById('loading');
+const noResults = document.getElementById('noResults');
+const gamesGrid = document.getElementById('gamesGrid');
+const highlightsGrid = document.getElementById('highlightsGrid');
+const searchInput = document.getElementById('searchInput');
+const highlightsSection = document.getElementById('highlightsSection');
+const gameModal = document.getElementById('gameModal');
+const supportModal = document.getElementById('supportModal');
+const subscribeModal = document.getElementById('subscribeModal');
 
+// Mock de dados para demonstração (simulando um arquivo games.json)
+const mockGames = {
+    "games": [
+        {
+            "name": "Super Mario World",
+            "description": "Uma aventura clássica do encanador Mario em busca de resgatar a princesa Peach.",
+            "genre": "Plataforma",
+            "size": "5MB",
+            "version": "1.0",
+            "developer": "Nintendo",
+            "releaseDate": "1990-11-21",
+            "image": "https://placehold.co/400x300/a8d8e0/1a1a1a?text=Super+Mario+World",
+            "downloadLink": "https://example.com/super-mario-world.zip",
+            "highlight": true
+        },
+        {
+            "name": "Chrono Trigger",
+            "description": "Um RPG épico sobre viagens no tempo para salvar o mundo.",
+            "genre": "RPG",
+            "size": "10MB",
+            "version": "1.2",
+            "developer": "Square Enix",
+            "releaseDate": "1995-03-11",
+            "image": "https://placehold.co/400x300/e0a8d8/1a1a1a?text=Chrono+Trigger",
+            "downloadLink": "https://example.com/chrono-trigger.zip",
+            "highlight": true
+        },
+        {
+            "name": "The Legend of Zelda: A Link to the Past",
+            "description": "Link embarca em uma jornada para derrotar Ganon e salvar Hyrule.",
+            "genre": "Aventura",
+            "size": "7MB",
+            "version": "1.1",
+            "developer": "Nintendo",
+            "releaseDate": "1991-11-21",
+            "image": "https://placehold.co/400x300/d8e0a8/1a1a1a?text=Zelda",
+            "downloadLink": "https://example.com/zelda.zip",
+            "highlight": false
+        },
+        {
+            "name": "Final Fantasy VI",
+            "description": "O jogo que definiu uma geração de RPGs com sua história complexa e personagens inesquecíveis.",
+            "genre": "RPG",
+            "size": "12MB",
+            "version": "1.5",
+            "developer": "Square Enix",
+            "releaseDate": "1994-04-02",
+            "image": "https://placehold.co/400x300/a8d8e0/1a1a1a?text=Final+Fantasy+VI",
+            "downloadLink": "https://example.com/ff6.zip",
+            "highlight": true
+        },
+        {
+            "name": "Street Fighter II Turbo",
+            "description": "Versão aprimorada do clássico jogo de luta, com novos personagens e movimentos.",
+            "genre": "Luta",
+            "size": "6MB",
+            "version": "2.0",
+            "developer": "Capcom",
+            "releaseDate": "1992-07-10",
+            "image": "https://placehold.co/400x300/e0a8d8/1a1a1a?text=Street+Fighter+II",
+            "downloadLink": "https://example.com/sf2.zip",
+            "highlight": false
+        },
+        {
+            "name": "Tetris",
+            "description": "Um dos jogos de quebra-cabeça mais famosos e viciantes de todos os tempos.",
+            "genre": "Puzzle",
+            "size": "1MB",
+            "version": "1.0",
+            "developer": "Alexey Pajitnov",
+            "releaseDate": "1984-06-06",
+            "image": "https://placehold.co/400x300/d8e0a8/1a1a1a?text=Tetris",
+            "downloadLink": "https://example.com/tetris.zip",
+            "highlight": false
+        }
+    ]
+};
 
 // Função para carregar dados dos jogos
 async function loadGames() {
     try {
-        const response = await fetch('games.json'); // Carrega o arquivo JSON
-        const data = await response.json();
+        // Usando dados mockados para o exemplo. Em um ambiente real, você faria:
+        // const response = await fetch('games.json');
+        // const data = await response.json();
+        const data = mockGames;
         
-        // Gerar IDs dinamicamente
-        const reversedGames = data.games.slice().reverse(); // Cria uma cópia invertida
+        // Gerar IDs dinamicamente e reverter a ordem para mostrar os mais novos primeiro
+        const reversedGames = data.games.slice().reverse();
         allGames = reversedGames.map((game, index) => ({
-
-            ...game, // Copia todas as propriedades existentes do jogo
-            id: index + 1 // Adiciona um ID baseado no índice (começando do 1)
+            ...game,
+            id: index + 1
         }));
 
         filteredGames = allGames;
         renderHighlights();
         renderGames();
-        document.getElementById('loading').style.display = 'none';
+        loading.style.display = 'none';
     } catch (error) {
         console.error('Erro ao carregar os jogos:', error);
-        document.getElementById('loading').textContent = 'Erro ao carregar jogos. Tente novamente mais tarde.';
+        loading.textContent = 'Erro ao carregar jogos. Tente novamente mais tarde.';
     }
 }
 
 // Função para renderizar jogos em destaque
 function renderHighlights() {
-    // Certifique-se de que 'highlightsGrid' é o ID correto para a grade interna
-    const highlightsGrid = document.getElementById('highlightsGrid');
     const highlights = allGames.filter(game => game.highlight);
-    
     highlightsGrid.innerHTML = highlights.map(game => `
-        <div class="game-card highlight" onclick="openModal(${game.id})">
+        <div class="game-card highlight" onclick="openGameModal(${game.id})">
             <div class="highlight-badge">Destaque</div>
             <img src="${game.image}" alt="${game.name}" class="game-image">
             <div class="game-info">
@@ -50,18 +134,14 @@ function renderHighlights() {
 
 // Função para renderizar todos os jogos
 function renderGames() {
-    const gamesGrid = document.getElementById('gamesGrid');
-    const noResults = document.getElementById('noResults');
-    
     if (filteredGames.length === 0) {
         gamesGrid.innerHTML = '';
         noResults.style.display = 'block';
         return;
     }
-    
     noResults.style.display = 'none';
     gamesGrid.innerHTML = filteredGames.map(game => `
-        <div class="game-card" onclick="openModal(${game.id})">
+        <div class="game-card" onclick="openGameModal(${game.id})">
             <img src="${game.image}" alt="${game.name}" class="game-image">
             <div class="game-info">
                 <h3 class="game-title">${game.name}</h3>
@@ -75,19 +155,24 @@ function renderGames() {
     `).join('');
 }
 
-// Função para abrir modal do jogo
-function openModal(gameId) {
+// Função para abrir o modal de detalhes do jogo
+function openGameModal(gameId) {
     const game = allGames.find(g => g.id === gameId);
     if (!game) return;
 
     document.getElementById('modalImage').src = game.image;
     document.getElementById('modalTitle').textContent = game.name;
     document.getElementById('modalDescription').textContent = game.description;
-    document.getElementById('downloadButton').onclick = () => {
-    showSubscribePrompt(game.downloadLink);
-};
-
     
+    // --- CORREÇÃO DO PROBLEMA DE DOWNLOAD ---
+    // Adiciona um listener para o evento de clique no botão de download
+    // Usamos `e.preventDefault()` para impedir que o link abra uma nova aba imediatamente
+    const downloadButton = document.getElementById('downloadButton');
+    downloadButton.onclick = (e) => {
+        e.preventDefault(); // Impede a ação padrão do link
+        showSubscribeModal(game.downloadLink);
+    };
+
     const details = document.getElementById('modalDetails');
     details.innerHTML = `
         <div class="detail-item">
@@ -112,14 +197,12 @@ function openModal(gameId) {
         </div>
     `;
     
-    // Adicionar o aviso abaixo do botão de download
     const modalBody = document.querySelector('#gameModal .modal-body');
-    let feedbackDiv = modalBody.querySelector('.game-feedback-notice');
+    let feedbackDiv = document.getElementById('gameFeedbackNotice');
     if (!feedbackDiv) {
         feedbackDiv = document.createElement('div');
+        feedbackDiv.id = 'gameFeedbackNotice';
         feedbackDiv.className = 'game-feedback-notice';
-        feedbackDiv.style.marginTop = '20px';
-        feedbackDiv.style.textAlign = 'center';
         modalBody.appendChild(feedbackDiv);
     }
     feedbackDiv.innerHTML = `
@@ -130,49 +213,28 @@ function openModal(gameId) {
         </small>
     `;
 
-    document.getElementById('gameModal').style.display = 'block';
+    gameModal.style.display = 'block';
 }
 
-// Função para fechar modal do jogo
-function closeModal() {
-    document.getElementById('gameModal').style.display = 'none';
+// Função para fechar o modal de detalhes do jogo
+function closeGameModal() {
+    gameModal.style.display = 'none';
 }
 
-function showSubscribePrompt(downloadLink) {
-    // Cria o modal temporário
-    const modal = document.createElement('div');
-    modal.className = 'subscribe-modal';
-    modal.innerHTML = `
-        <div class="subscribe-content">
-            <h2>🎮 Antes de baixar...</h2>
-            <p>Ajude o projeto se inscrevendo no nosso canal no YouTube!</p>
-            <a href="https://www.youtube.com/@PidiottoRetroHub?sub_confirmation=1" 
-               target="_blank" 
-               class="subscribe-btn">✅ Inscrever-se</a>
-            <button class="continue-btn">Continuar para o Download</button>
-        </div>
-    `;
-
-    // Adiciona o modal na tela
-    document.body.appendChild(modal);
-
-    // Evento para continuar para o download
-    modal.querySelector('.continue-btn').onclick = () => {
+// Função para mostrar o modal de inscrição
+function showSubscribeModal(downloadLink) {
+    subscribeModal.style.display = 'flex';
+    
+    document.getElementById('continueBtn').onclick = () => {
         window.open(downloadLink, '_blank');
-        modal.remove();
-    };
-
-    // Fechar clicando fora
-    modal.onclick = (e) => {
-        if (e.target === modal) modal.remove();
+        subscribeModal.style.display = 'none';
     };
 }
-
 
 // Função de pesquisa
 function searchGames() {
-    const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-    filteredGames = allGames.filter(game => 
+    const searchTerm = searchInput.value.toLowerCase();
+    filteredGames = allGames.filter(game =>
         game.name.toLowerCase().includes(searchTerm) ||
         game.description.toLowerCase().includes(searchTerm) ||
         game.genre.toLowerCase().includes(searchTerm)
@@ -182,72 +244,104 @@ function searchGames() {
 
 // Função para abrir modal de apoio
 function openSupportModal() {
-    document.getElementById('supportModal').style.display = 'block';
+    supportModal.style.display = 'block';
 }
 
 // Função para fechar modal de apoio
 function closeSupportModal() {
-    document.getElementById('supportModal').style.display = 'none';
+    supportModal.style.display = 'none';
 }
 
 // Função para copiar chave PIX
 function copyPixKey() {
-    const pixKey = document.getElementById('pixKey').textContent;
-    navigator.clipboard.writeText(pixKey).then(() => {
-        alert('Chave PIX copiada para a área de transferência! 📋');
-    }).catch(() => {
-        const textArea = document.createElement('textarea');
-        textArea.value = pixKey;
-        document.body.appendChild(textArea);
-        textArea.select();
-        document.execCommand('copy');
-        document.body.removeChild(textArea);
-        alert('Chave PIX copiada! 📋');
-    });
+    const pixKey = document.getElementById('pixKey').textContent.trim();
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(pixKey).then(() => {
+            console.log('Chave PIX copiada!');
+            showToast('Chave PIX copiada para a área de transferência! 📋');
+        }).catch(err => {
+            console.error('Falha ao copiar o texto:', err);
+            fallbackCopy(pixKey);
+        });
+    } else {
+        fallbackCopy(pixKey);
+    }
 }
 
+// Função de fallback para copiar em navegadores mais antigos
+function fallbackCopy(text) {
+    const textArea = document.createElement('textarea');
+    textArea.value = text;
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+    try {
+        document.execCommand('copy');
+        console.log('Chave PIX copiada (fallback)!');
+        showToast('Chave PIX copiada! 📋');
+    } catch (err) {
+        console.error('Falha ao copiar o texto com fallback.', err);
+    }
+    document.body.removeChild(textArea);
+}
+
+// Função para mostrar uma notificação temporária
+function showToast(message) {
+    const toast = document.createElement('div');
+    toast.textContent = message;
+    toast.style.cssText = `
+        position: fixed;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #28a745;
+        color: white;
+        padding: 15px 20px;
+        border-radius: 25px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        z-index: 10002;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    `;
+    document.body.appendChild(toast);
+    
+    setTimeout(() => {
+        toast.style.opacity = 1;
+    }, 10); // Pequeno atraso para a transição funcionar
+    
+    setTimeout(() => {
+        toast.style.opacity = 0;
+        toast.addEventListener('transitionend', () => toast.remove());
+    }, 3000);
+}
+
+
 // Event listeners
-document.getElementById('searchInput').addEventListener('input', searchGames);
-document.querySelector('#gameModal .close').addEventListener('click', closeModal);
-document.querySelector('#supportModal .support-close').addEventListener('click', closeSupportModal);
+searchInput.addEventListener('input', searchGames);
 
 // Fechar modais clicando fora
 window.addEventListener('click', function(event) {
-    const gameModal = document.getElementById('gameModal');
-    const supportModal = document.getElementById('supportModal');
     if (event.target === gameModal) {
-        closeModal();
+        closeGameModal();
     }
     if (event.target === supportModal) {
         closeSupportModal();
     }
+    if (event.target === subscribeModal) {
+        subscribeModal.style.display = 'none';
+    }
 });
 
-// --- CONTROLE DE VISIBILIDADE DA SEÇÃO DE DESTAQUES ---
-// Obtém a referência aos elementos
-const searchInput = document.getElementById('searchInput');
-const highlightsSection = document.getElementById('highlightsSection'); // Usando o novo ID da seção inteira
-
-// Verifica se os elementos existem antes de adicionar o event listener
+// Controle de visibilidade da seção de destaques
 if (searchInput && highlightsSection) {
     searchInput.addEventListener('input', () => {
-        // Se houver texto na pesquisa, esconde a seção de destaques
         if (searchInput.value.trim() !== '') {
             highlightsSection.style.display = 'none';
         } else {
-            // Se o campo estiver vazio, mostra a seção de destaques
-            highlightsSection.style.display = 'block'; // Ou 'flex' se for um contêiner flexbox no CSS
+            highlightsSection.style.display = 'block';
         }
     });
 }
-// --- FIM DO CONTROLE DE VISIBILIDADE ---
-
-
-// Mostrar modal de apoio automaticamente após 30 segundos
-setTimeout(() => {
-    openSupportModal();
-}, 30000);
 
 // Inicializar a aplicação
-loadGames();
-
+window.onload = loadGames;
