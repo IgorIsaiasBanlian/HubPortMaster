@@ -17,21 +17,98 @@ body {
     padding: 20px;
 }
 
-.header {
-    text-align: center;
-    margin-bottom: 40px;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #4b4b9b;
     color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.header h1 {
-    font-size: 3rem;
+.nav-brand a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #a7a9d6;
+}
+
+.info-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.info-box {
+    flex: 1;
+    min-width: 300px;
+    background-color: #2f3640;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    color: #f5f6fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.discord-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
-.header p {
-    font-size: 1.2rem;
-    opacity: 0.9;
+.discord-icon {
+    width: 28px;
+    height: 28px;
+}
+
+.discord-text {
+    margin: 0 0 10px 0;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.discord-link {
+    color: #74b9ff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.discord-link:hover {
+    text-decoration: underline;
+}
+
+.youtube-video {
+    text-align: center;
+}
+
+.youtube-video iframe {
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
 }
 
 .search-container {
@@ -96,45 +173,19 @@ body {
     box-shadow: 0 12px 35px rgba(0,0,0,0.15);
 }
 
-/* ... seu código CSS anterior ... */
-
 .game-card.highlight {
     background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
-    /* Assegura que o texto seja legível no fundo claro/colorido */
-    color: #333; /* Mantém a cor padrão, mas vamos sobrescrever para títulos e descrições */
+    color: #333;
 }
 
 .game-card.highlight .game-title {
-    color: #8B4513; /* Um tom de marrom escuro para destaque no fundo claro */
-    text-shadow: 0.5px 0.5px 1px rgba(255,255,255,0.5); /* Pequena sombra para melhorar o contraste */
-}
-
-.game-description {
-    color: #636e72;
-    font-size: 0.9rem;
-    line-height: 1.4;
-    margin-bottom: 15px;
-
-    /* Propriedades para truncar o texto em múltiplas linhas */
-    overflow: hidden; /* Oculta o conteúdo que excede */
-    text-overflow: ellipsis; /* Adiciona "..." ao final, se o texto for muito longo para UMA linha */
-
-    /* Compatibilidade com navegadores baseados em Webkit (Chrome, Safari, Edge) */
-    display: -webkit-box;
-    -webkit-line-clamp: 3; /* Limita a 3 linhas nesses navegadores */
-    -webkit-box-orient: vertical;
-
-    /* Propriedades padrão (ainda com suporte limitado para multi-linhas e ellipsis) */
-    /* Para navegadores que suportam a propriedade line-clamp sem prefixo */
-    line-clamp: 3; /* Tentativa de aplicar o limite de 3 linhas */
-    box-orient: vertical; /* Direção do empilhamento do conteúdo na caixa */
+    color: #8B4513;
+    text-shadow: 0.5px 0.5px 1px rgba(255,255,255,0.5);
 }
 
 .game-card.highlight .game-meta {
-    color: #CC6600; /* Um tom de laranja/marrom para metadados */
+    color: #CC6600;
 }
-
-/* ... seu código CSS posterior ... */
 
 .game-image {
     width: 100%;
@@ -159,6 +210,11 @@ body {
     font-size: 0.9rem;
     line-height: 1.4;
     margin-bottom: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 .game-meta {
@@ -491,134 +547,25 @@ body {
 }
 
 .download-password-notice {
-    margin-top: 15px; /* Espaço acima do aviso */
-    font-size: 0.95rem; /* Tamanho da fonte um pouco menor */
-    color: #f39c12; /* Cor de destaque (laranja/amarelo) para o aviso */
-    font-weight: bold; /* Deixa o texto em negrito */
-    text-align: center; /* Centraliza o texto */
-    padding: 8px 15px;
-    border: 1px solid #f39c12; /* Borda para destacar */
-    border-radius: 5px;
-    background-color: rgba(243, 156, 18, 0.1); /* Fundo levemente transparente */
-}
-
-
-.info-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin: 30px 0;
-    padding: 10px;
-    border-radius: 8px;
-    background-color: #1e272e; /* tom escuro para destacar */
-    color: #f1f2f6;
-}
-
-.discord-info {
-    flex: 1;
-    min-width: 250px;
-}
-
-.discord-text {
-    margin: 0 0 5px 0;
+    margin-top: 15px;
+    font-size: 0.95rem;
+    color: #f39c12;
     font-weight: bold;
-    font-size: 1rem;
-}
-
-.discord-link {
-    color: #74b9ff;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.discord-link:hover {
-    text-decoration: underline;
-}
-
-.youtube-video {
-    flex: 1;
-    text-align: right;
-    min-width: 320px;
-}
-
-.youtube-video iframe {
-    max-width: 100%;
-    border-radius: 5px;
-}
-.info-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin: 30px 0;
-}
-
-/* Estilo base dos quadrinhos */
-.info-box {
-    flex: 1;
-    min-width: 300px;
-    background-color: #2f3640;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    color: #f5f6fa;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* Discord */
-.discord-text {
-    margin: 0 0 10px 0;
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-.discord-link {
-    color: #74b9ff;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 1.1rem;
-}
-
-.discord-link:hover {
-    text-decoration: underline;
-}
-
-/* YouTube */
-.youtube-video {
     text-align: center;
+    padding: 8px 15px;
+    border: 1px solid #f39c12;
+    border-radius: 5px;
+    background-color: rgba(243, 156, 18, 0.1);
 }
-
-.youtube-video iframe {
-    width: 100%;
-    height: 180px;
-    border-radius: 8px;
-}
-.discord-header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-}
-
-.discord-icon {
-    width: 28px;
-    height: 28px;
-}
-
 
 .subscribe-modal {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.85);
-    display: flex;
     justify-content: center;
     align-items: center;
     z-index: 9999;
@@ -653,4 +600,3 @@ body {
     cursor: pointer;
     border-radius: 5px;
 }
-
