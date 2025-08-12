@@ -631,12 +631,25 @@
       "name": "OpenRCT2",
       "description": "OpenRCT2 é uma reimplementação de código aberto do RollerCoaster Tycoon 2.",
       "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/openrct2/screenshot.jpg",
-      "genre": "Action",
+      "genre": "Simulador",
       "size": "968Mb",
       "version": "",
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/wZcttK2Gfa/OpenRCT2.html",
+      "highlight": false
+    }
+    ,
+    {
+      "name": "Timespinner",
+      "description": "Viaje de volta no tempo para mudar o próprio destino, nesta aventura lindamente elaborada e baseada em histórias, inspirada nos clássicos jogos de plataforma de ação dos anos 90.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/timespinner/screenshot.jpg",
+      "genre": "Action",
+      "size": "305Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/IFO0u-obku/timespinner.html",
       "highlight": false
     }
   ]
