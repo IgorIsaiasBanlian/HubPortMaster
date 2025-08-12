@@ -10,7 +10,8 @@ const gameModal = document.getElementById('gameModal');
 const supportModal = document.getElementById('supportModal');
 const subscribeModal = document.getElementById('subscribeModal');
 
-// Mock de dados para demonstração (simulando um arquivo games.json)
+// Dados mockados para demonstração. Em um ambiente real, você pode remover isso
+// e usar apenas a chamada `fetch` para o seu arquivo `games.json`.
 const mockGames = {
     "games": [
         {
@@ -91,10 +92,9 @@ const mockGames = {
 // Função para carregar dados dos jogos
 async function loadGames() {
     try {
-        // Usando dados mockados para o exemplo. Em um ambiente real, você faria:
-        // const response = await fetch('games.json');
-        // const data = await response.json();
-        const data = mockGames;
+        // Tenta carregar os dados do arquivo games.json.
+        const response = await fetch('games.json');
+        const data = await response.json();
         
         // Gerar IDs dinamicamente e reverter a ordem para mostrar os mais novos primeiro
         const reversedGames = data.games.slice().reverse();
@@ -108,8 +108,20 @@ async function loadGames() {
         renderGames();
         loading.style.display = 'none';
     } catch (error) {
-        console.error('Erro ao carregar os jogos:', error);
-        loading.textContent = 'Erro ao carregar jogos. Tente novamente mais tarde.';
+        console.warn('Erro ao carregar games.json. Usando dados de exemplo:', error);
+        
+        // Se a busca falhar, utiliza os dados mockados
+        const data = mockGames;
+        const reversedGames = data.games.slice().reverse();
+        allGames = reversedGames.map((game, index) => ({
+            ...game,
+            id: index + 1
+        }));
+        
+        filteredGames = allGames;
+        renderHighlights();
+        renderGames();
+        loading.style.display = 'none';
     }
 }
 
@@ -164,9 +176,9 @@ function openGameModal(gameId) {
     document.getElementById('modalTitle').textContent = game.name;
     document.getElementById('modalDescription').textContent = game.description;
     
-    // --- CORREÇÃO DO PROBLEMA DE DOWNLOAD ---
-    // Adiciona um listener para o evento de clique no botão de download
-    // Usamos `e.preventDefault()` para impedir que o link abra uma nova aba imediatamente
+    // CORREÇÃO DO PROBLEMA DE DOWNLOAD:
+    // O evento de clique do botão é cancelado para evitar que o link abra imediatamente.
+    // Em vez disso, chamamos a função `showSubscribeModal`.
     const downloadButton = document.getElementById('downloadButton');
     downloadButton.onclick = (e) => {
         e.preventDefault(); // Impede a ação padrão do link
@@ -307,7 +319,7 @@ function showToast(message) {
     
     setTimeout(() => {
         toast.style.opacity = 1;
-    }, 10); // Pequeno atraso para a transição funcionar
+    }, 10);
     
     setTimeout(() => {
         toast.style.opacity = 0;
