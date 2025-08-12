@@ -377,7 +377,7 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/tYGhmHJVku/To_the_Moon_RU.html?",
- "highlight": false
+      "highlight": false
     }
           ,
     {
@@ -390,7 +390,7 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/IUZ8XARifa/Rakuen-PT-BR.html",
- "highlight": false
+      "highlight": false
     }
               ,
     {
@@ -403,7 +403,7 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/BCEYAe4Ifa/Victory_Heat_Rally.html?",
- "highlight": false
+      "highlight": false
     }
                   ,
     {
@@ -416,7 +416,7 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/jhB1V4fOge/fridaynightfunkin.html?",
- "highlight": false
+      "highlight": false
     }
                       ,
     {
@@ -429,7 +429,163 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/vhVdrxNqfa/Morrowind_GoTYe_RU.html?",
- "highlight": false
+      "highlight": false
+    }
+    ,
+    {
+      "name": "Space Cadet Pinball",
+      "description": "Pimbal classico do windows",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/space.cadet.pinball/screenshot.jpg",
+      "genre": "Pinball",
+      "size": "201Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/ivVR6MSkge/Space_Cadet_Pinball.html",
+      "highlight": false
+    }
+    ,
+    {
+      "name": "Shards of God",
+      "description": "Num distante planeta desértico, foi cometido um crime. Quando Madre Tiabata e Irmã Ava decidem resolver o mistério, elas logo se deparam com um enigma impossível: como assassinar um deus?",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/shardsofgod/screenshot.png",
+      "genre": "RPG",
+      "size": "130Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/HYyxjHxUge/Shards_of_God.html",
+      "highlight": false
+    }
+    ,
+    {
+      "name": "Shovel Knight Treasure Trove",
+      "description": "Shovel Knight Treasure Trove Classico",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/shovel.knight/screenshot.jpg",
+      "genre": "Action",
+      "size": "332Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/KI-0C6odku/Shovel_Knight.html",
+      "highlight": false
+    }
+    ,
+    {
+      "name": "Rockbot",
+      "description": "Um jogo livremente inspirado no antigo estilo clássico de jogos de salto e tiro de 8 bits, com alguns modernos aqui e ali. Rockbot e RockDroid foram criados pela Upperlands e foram inspirados nos antigos jogos NES MegaMan.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/rockbot/screenshot.png",
+      "genre": "Action",
+      "size": "36Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/B1R4V1_3ku/RockBot12_-_RockDroid_12.html",
+      "highlight": false
+    }
+    ,
+    {
+      "name": "Osana's Revenge",
+      "description": "Osana's Revenge é um jogo de tiro de cima para baixo repleto de memes e piadas privadas surgidas do drama e dos contratempos de desenvolvimento do Yandere Simulator, em particular, com seu primeiro rival (Osana Najimi) sendo adiado por vários anos. No entanto, você não precisa estar familiarizado com tudo isso para poder jogar e aproveitar.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/osanasrevenge/screenshot.png",
+      "genre": "RPG",
+      "size": "9Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/X7IWC3ntjq/Osanas_Revenge.html",
+      "highlight": false
+    }
+     ,
+    {
+      "name": "Panzer Paladin",
+      "description": "O sinistro Ravenous e suas legiões de demônios brutais estão prontos para a batalha. A situação é terrível, mas a humanidade tem um último ás na manga: o Paladino Panzer!",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/panzerpaladin/screenshot.png",
+      "genre": "RPG",
+      "size": "183Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/SHOEXuzOfa/PanzerPaladin.html",
+      "highlight": false
+    }
+    ,
+    {
+      "name": "Mythos",
+      "description": "Esote é uma das muitas pequenas cidades localizadas no Grande Labirinto de Dédalis, formada anos depois que o lendário herói Teseu derrotou o terrível minotauro. Embora Teseu tenha conseguido escapar do Labirinto, muitos dos sobreviventes restantes que não conseguiram tiveram que se estabelecer, resignando-se a viver para sempre presos lá dentro. Vocês (Sophos) estão fartos da atitude derrotista que todos os cidadãos carregam no rosto, vocês odeiam a atmosfera solene e tranquila que persiste no dia a dia. Depois de ouvir histórias do Exterior de seus falecidos pais anos atrás, você decide ir ver por si mesmo. O que há para temer? Tome decisões e manipule sua chance de fuga. Depende de você se você ENCONTRA A SAÍDA ou FICA PERDIDO",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/mythos/screenshot.png",
+      "genre": "RPG",
+      "size": "43Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/FKf4_V_Bge/Mythos.html",
+      "highlight": false
+    }
+    ,
+    {
+      "name": "Mercenary Kings",
+      "description": "Crie seu arsenal para vingar seus camaradas caídos e salvar o mundo das forças assustadoras do CLAW!",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/mercenarykings/screenshot.png",
+      "genre": "Action",
+      "size": "159Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/CAptzEwcku/Mercenary_Kings.html",
+      "highlight": false
+    }
+    ,
+    {
+      "name": "Heart of Darkness",
+      "description": "Heart of Darkness usando a reimplementação do motor desenvolvido pelo Amazing Studio.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/heart.of.darkness/screenshot.jpg",
+      "genre": "Action",
+      "size": "431Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/M20SI7Suku/Heart_of_Darkness.html",
+      "highlight": false
+    }
+    ,
+    {
+      "name": "Gato Roboto",
+      "description": "Entre em seu aconchegante mecha blindado e parta em uma jornada perigosa por um submundo alienígena cheio de criaturas irritáveis e obstáculos traiçoeiros em um esforço valente para salvar seu capitão encalhado e sua nave espacial acidentada.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/gatoroboto/screenshot.png",
+      "genre": "Action",
+      "size": "48Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/fOkNZy7Oge/Gato_Roboto.html",
+      "highlight": false
+    }
+    ,
+    {
+      "name": "Disc Room",
+      "description": "Você está pronto para ser cortado ao meio? O ano é 2089 e um disco gigante apareceu na órbita de Júpiter. Entre no enorme traje espacial de um cientista corajoso e explore este extenso matadouro intergaláctico. Explore a expansiva nave de disco em órbita, movendo-se de sala em sala, sobrevivendo e completando objetivos cada vez mais complexos estabelecidos. Use habilidades desbloqueadas para superar dezenas de tipos diferentes de discos enquanto resolve quebra-cabeças misteriosos. E lembre-se: o que te mata só te torna mais forte.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/discroom/screenshot.png",
+      "genre": "Action",
+      "size": "148Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/PEtDP-ygfa/Disc_Room.html",
+      "highlight": false
+    }
+    ,
+    {
+      "name": "Deltarune (PTBR)",
+      "description": "Mergulhe na história paralela de UNDERTALE! Lute ou poupe seu caminho através de batalhas cheias de ação enquanto explora um mundo misterioso ao lado de um elenco cativante de personagens novos e familiares. Os capítulos 1 a 4 estarão disponíveis no lançamento, com mais planejados como atualizações gratuitas!",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/deltarune/screenshot.png",
+      "genre": "Action",
+      "size": "318Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/LnJlwIKbfa/Deltarune.html",
+      "highlight": false
     }
   ]
 }
