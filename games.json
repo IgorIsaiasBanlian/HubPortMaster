@@ -587,5 +587,57 @@
       "downloadLink": "https://www.4shared.com/zip/LnJlwIKbfa/Deltarune.html",
       "highlight": false
     }
+    ,
+    {
+      "name": "Need For Speed II SE",
+      "description": "Need for Speed II é um videogame de corrida lançado no final da década de 1990, apresentando uma variedade de carros e pistas exóticas do mundo todo, permitindo que os jogadores corram contra oponentes controlados por computador ou jogadores humanos em vários modos, incluindo corrida única e torneio.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/nfs2se/screenshot.jpg",
+      "genre": "Corrida",
+      "size": "478Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/ojJu5-wkjq/Need_For_Speed_II_SE.html",
+      "highlight": false
+    }
+    ,
+    {
+      "name": "FEZ",
+      "description": "Gomez é uma criatura 2D que vive em um mundo 2D. Será? Quando a existência de uma misteriosa terceira dimensão é revelada a ele, Gomez é enviado em uma jornada que irá levá-lo a cada canto do tempo e do espaço.",
+      "image": "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/224760/header.jpg?t=1724875775",
+      "genre": "Puzzle",
+      "size": "346Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/jpvsoBMpge/fez.html",
+      "highlight": false
+    }
+    ,
+    {
+      "name": "Dust: An Elysian Tail",
+      "description": "Assuma a aparência da impetuosa guardião da espada nimbat do Dust: An Elysian Tail com esta máscara da Fidget.",
+      "image": "https://hot.game/uploads/media/poster_game/0001/03/cb5a93312025db095ccc7c53bffbec510782e0fc.jpeg",
+      "genre": "Action",
+      "size": "1,3Gb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/JeCPvlCrku/Dust_-_an_Elysian_Tail.html",
+      "highlight": false
+    }
+    ,
+    {
+      "name": "OpenRCT2",
+      "description": "OpenRCT2 é uma reimplementação de código aberto do RollerCoaster Tycoon 2.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/openrct2/screenshot.jpg",
+      "genre": "Action",
+      "size": "968Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/wZcttK2Gfa/OpenRCT2.html",
+      "highlight": false
+    }
   ]
 }
