@@ -665,5 +665,18 @@
       "downloadLink": "https://www.4shared.com/zip/q2f-OPa2ku/Undertale_ptbr.html",
       "highlight": false
     }
+    ,
+    {
+      "name": "AM2R",
+      "description": "Mais um remake de Metroid 2. Um jogo de ação e aventura desenvolvido pelo programador argentino Milton Guasti (também conhecido como DoctorM64).",
+      "image": "https://raw.githubusercontent.com/PortsMaster-MV/PortMaster-MV-New/main/ports/am2r/screenshot.jpg",
+      "genre": "Metroidvania",
+      "size": "322Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "2024-05-15",
+      "downloadLink": "https://www.4shared.com/zip/fZaYZ3Pyjq/AM2R.html",
+      "highlight": false
+    }
   ]
 }
