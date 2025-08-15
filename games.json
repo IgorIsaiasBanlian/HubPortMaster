@@ -130,7 +130,7 @@
       "developer": "",
       "releaseDate": "2024-05-15",
       "downloadLink": "https://www.4shared.com/zip/Z_eE92Ilku/SpaghettiKart__Mario_Kart_64_.html?",
-      "highlight": true
+      "highlight": false
     },
     {
       "name": "Gloom",
@@ -690,6 +690,19 @@
       "releaseDate": "2024-05-15",
       "downloadLink": "https://www.4shared.com/zip/2eHmENFtge/rejuvenation.html",
       "highlight": false
+    }
+    ,
+    {
+      "name": "PokeMMO",
+      "description": "Famoso Pokemon Online, para duvidas, entre em nosso discord para ajuda com a instalação.",
+      "image": "https://pokemmo.com/build/images/screenshot/a.debf11f5.png",
+      "genre": "RPG",
+      "size": "355,4Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "2024-05-15",
+      "downloadLink": "https://www.4shared.com/zip/2DGj1Ymjku/PokeMMO.html",
+      "highlight": true
     }
   ]
 }
