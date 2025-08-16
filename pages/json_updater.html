@@ -1,0 +1,673 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Editor de games.json — HubPortMaster</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root{
+    --bg:#0f1115; --panel:#151922; --muted:#9aa4b2; --text:#e6edf3;
+    --primary:#6ab0ff; --accent:#69db7c; --danger:#ff6b6b; --warning:#f59f00;
+    --border:#222938; --chip:#1c2330; --input:#121723;
+    --shadow:0 8px 30px rgba(0,0,0,.35);
+    --radius:12px;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; background:linear-gradient(180deg,#0b0e13,#0f1115 40%,#0f1115);
+    color:var(--text); font:14px/1.45 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+  }
+  header{
+    position:sticky; top:0; z-index:5; background:rgba(15,17,21,.8); backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--border);
+  }
+  .wrap{max-width:1200px; margin:0 auto; padding:18px}
+  h1{margin:0; font-size:20px; letter-spacing:.2px}
+  .muted{color:var(--muted)}
+  .bar{display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin-top:12px}
+  input[type="text"], input[type="url"], input[type="date"], input[type="number"], textarea, select{
+    background:var(--input); border:1px solid var(--border); color:var(--text);
+    padding:10px 12px; border-radius:10px; outline:none; width:100%;
+  }
+  input[type="checkbox"]{transform:scale(1.15)}
+  textarea{min-height:90px; resize:vertical}
+  .btn{
+    appearance:none; border:none; border-radius:10px; padding:10px 14px; cursor:pointer; font-weight:600;
+    color:#0b0e13; background:var(--primary); box-shadow:var(--shadow); transition:transform .05s ease;
+  }
+  .btn:active{transform:translateY(1px)}
+  .btn.secondary{background:#8aa0b6; color:#0b0e13}
+  .btn.ghost{background:transparent; color:var(--text); border:1px solid var(--border); box-shadow:none}
+  .btn.accent{background:var(--accent)}
+  .btn.danger{background:var(--danger); color:#0b0e13}
+  .btn.warning{background:var(--warning); color:#0b0e13}
+  /* Estilos para o novo layout sem o grid */
+  main.wrap{padding-top:16px;}
+  .card{
+    background:var(--panel); border:1px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow);
+  }
+  .card .hd{display:flex; align-items:center; justify-content:space-between; padding:14px 16px; border-bottom:1px solid var(--border)}
+  .card .bd{padding:14px 16px}
+  .table{
+    width:100%; border-collapse:separate; border-spacing:0 8px;
+  }
+  /* Remove a estilização padrão da tabela para usar grid */
+  .table thead, .table tbody {
+      display: block;
+  }
+  .table tbody {
+      margin-top: 8px; /* Espaço entre o cabeçalho e a lista */
+  }
+  /* Adiciona a estilização de grid para o cabeçalho */
+  .list-header {
+      display: grid;
+      grid-template-columns: 26px 1.2fr 1fr .8fr .6fr .5fr 160px;
+      gap: 10px;
+      padding: 0 10px 6px;
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 600;
+  }
+  .list-header div {
+      text-align: left;
+  }
+  .list-header div:last-child {
+      text-align: right;
+  }
+  .row{
+    display:grid; grid-template-columns: 26px 1.2fr 1fr .8fr .6fr .5fr 160px;
+    gap:10px; align-items:center; background:var(--chip); border:1px solid var(--border); padding:10px; border-radius:10px;
+  }
+  .row img{width:24px; height:24px; border-radius:6px; object-fit:cover; border:1px solid var(--border)}
+  .chip{display:inline-flex; align-items:center; gap:6px; background:#111723; border:1px solid var(--border); padding:6px 8px; border-radius:999px; font-size:12px; color:var(--muted)}
+  .actions{display:flex; gap:8px; justify-content:flex-end}
+  .form-grid{display:grid; grid-template-columns:1fr; gap:12px}
+  .two{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+  .three{display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px}
+  .preview{
+    border:1px dashed var(--border); border-radius:10px; padding:10px; text-align:center; background:var(--chip)
+  }
+  .preview img{max-width:100%; max-height:180px; border-radius:8px; border:1px solid var(--border)}
+  .kbd{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,"Liberation Mono","Courier New", monospace; background:#0d121a; border:1px solid var(--border); padding:2px 6px; border-radius:6px; font-size:12px; color:var(--muted)}
+  .footer{padding:18px; text-align:center; color:var(--muted)}
+  .hint{font-size:12px; color:var(--muted)}
+  .notice{padding:10px 12px; border:1px solid var(--border); border-radius:10px; background:#101521; color:var(--muted)}
+
+  /* --- NOVOS ESTILOS PARA O MODAL --- */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  .modal-overlay.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .modal-content {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    max-width: 600px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+  }
+  
+  .modal-overlay.visible .modal-content {
+    transform: translateY(0);
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <!-- Versão adicionada aqui -->
+      <h1>Editor de <span class="kbd">games.json</span> <span class="muted">(versão <span id="versionDisplay"></span>) — HubPortMaster</span></h1>
+      <div class="bar">
+        <input id="urlInput" type="url" placeholder="Cole aqui a URL do seu games.json (ex.: https://github.com/.../blob/main/games.json)" style="flex:1 1 420px">
+        <button class="btn" id="btnLoad">Carregar</button>
+        <label class="hint"><input type="checkbox" id="autoSaveToggle" checked> Salvar rascunho local automaticamente</label>
+        <button class="btn ghost" id="btnClearLocal">Limpar rascunho local</button>
+      </div>
+      <div class="bar">
+        <!-- O botão de adicionar agora irá abrir o modal -->
+        <button class="btn accent" id="btnAdd">+ Novo jogo</button>
+        <input id="fileInput" type="file" accept="application/json,.json" style="display:none">
+        <button class="btn secondary" id="btnImport">Importar JSON do PC</button>
+        <button class="btn" id="btnDownload">Baixar JSON</button>
+        <button class="btn ghost" id="btnCopy">Copiar JSON</button>
+        <span class="muted hint">Atalho: <span class="kbd">Ctrl/Cmd + S</span> para baixar</span>
+      </div>
+      <div class="notice hint" id="urlTip" style="display:none"></div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- A lista agora ocupa toda a largura -->
+    <section class="card">
+      <div class="hd">
+        <strong>Lista de jogos (<span id="count">0</span>)</strong>
+        <span class="hint">Arraste a alça ▦ para reordenar</span>
+      </div>
+      <div class="bd" id="listArea">
+        <!-- O layout da tabela foi alterado para usar divs e grids para um melhor alinhamento -->
+        <div class="table">
+            <div class="list-header">
+                <div></div>
+                <div>Título</div>
+                <div>Gênero</div>
+                <div>Tamanho</div>
+                <div>Data</div>
+                <div>Destaque</div>
+                <div style="text-align: right;">Ações</div>
+            </div>
+            <div id="rows" style="display:grid; gap:8px; padding:6px 0"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="footer">Feito com ❤️ para o HubPortMaster — tudo roda 100% no seu navegador.</div>
+
+  <!-- --- O MODAL FOI MOVIDO PARA FORA DO LAYOUT PRINCIPAL --- -->
+  <div class="modal-overlay" id="editorModal">
+    <section class="modal-content">
+      <div class="hd">
+        <strong id="modalTitle">Editor</strong>
+        <span class="hint" id="editHint">Selecione um item ou clique em “Novo jogo”.</span>
+      </div>
+      <div class="bd">
+        <form id="form" class="form-grid" autocomplete="off">
+          <input type="hidden" id="idx">
+          <div>
+            <label>Nome</label>
+            <input id="name" type="text" placeholder="Ex.: Fran Bow" required>
+          </div>
+          <div>
+            <label>Descrição</label>
+            <textarea id="description" placeholder="Resumo do jogo"></textarea>
+          </div>
+          <div>
+            <label>Imagem (URL)</label>
+            <input id="image" type="url" placeholder="https://.../screenshot.png">
+            <div class="preview" id="imagePreview"><span class="muted">Preview aparecerá aqui</span></div>
+          </div>
+          <div class="two">
+            <div>
+              <label>Gênero</label>
+              <input id="genre" type="text" placeholder="Aventura, Indie">
+            </div>
+            <div>
+              <label>Tamanho</label>
+              <input id="size" type="text" placeholder="481Mb">
+            </div>
+          </div>
+          <div class="three">
+            <div>
+              <label>Versão</label>
+              <input id="version" type="text" placeholder="v1.0.0">
+            </div>
+            <div>
+              <label>Desenvolvedor</label>
+              <input id="developer" type="text" placeholder="Studio X">
+            </div>
+            <div>
+              <label>Data de lançamento</label>
+              <input id="releaseDate" type="date">
+            </div>
+          </div>
+          <div>
+            <label>Link de download (URL)</label>
+            <input id="downloadLink" type="url" placeholder="https://...">
+          </div>
+          <div class="two" style="align-items:center">
+            <label class="hint"><input id="highlight" type="checkbox"> Marcar como destaque</label>
+            <div class="actions">
+              <button class="btn ghost" id="btnCancel" type="button">Cancelar</button>
+              <button class="btn" id="btnSave" type="submit">Salvar item</button>
+            </div>
+          </div>
+        </form>
+        <div class="hint" style="margin-top:10px">Dica: colar um link do GitHub com <span class="kbd">/blob/</span> é aceito — converteremos para <span class="kbd">raw.githubusercontent.com</span> automaticamente ao carregar.</div>
+      </div>
+    </section>
+  </div>
+
+
+<script>
+(function(){
+  const $ = sel => document.querySelector(sel);
+  const $$ = sel => Array.from(document.querySelectorAll(sel));
+
+  const STORAGE_KEY = "hubpm_games_json_draft_v1";
+  const URL_KEY = "hubpm_games_url_last";
+  const el = {
+    urlInput: $("#urlInput"),
+    btnLoad: $("#btnLoad"),
+    rows: $("#rows"),
+    count: $("#count"),
+    urlTip: $("#urlTip"),
+    btnAdd: $("#btnAdd"),
+    fileInput: $("#fileInput"),
+    btnImport: $("#btnImport"),
+    btnDownload: $("#btnDownload"),
+    btnCopy: $("#btnCopy"),
+    btnClearLocal: $("#btnClearLocal"),
+    autoSaveToggle: $("#autoSaveToggle"),
+    form: $("#form"),
+    idx: $("#idx"),
+    name: $("#name"),
+    description: $("#description"),
+    image: $("#image"),
+    imagePreview: $("#imagePreview"),
+    genre: $("#genre"),
+    size: $("#size"),
+    version: $("#version"),
+    developer: $("#developer"),
+    releaseDate: $("#releaseDate"),
+    downloadLink: $("#downloadLink"),
+    highlight: $("#highlight"),
+    btnCancel: $("#btnCancel"),
+    btnSave: $("#btnSave"),
+    editHint: $("#editHint"),
+    editorModal: $("#editorModal"),
+    modalTitle: $("#modalTitle"),
+    versionDisplay: $("#versionDisplay") // Novo elemento para a versão
+  };
+
+  // Adiciona a chave 'version' ao objeto de dados
+  let data = { version: 1, games: [] };
+  let draggingIndex = null;
+
+  // --- Helpers ---
+  function normalizeGitHubUrl(u){
+    if(!u) return u;
+    try{
+      const url = new URL(u);
+      if(url.hostname === "github.com" && url.pathname.includes("/blob/")){
+        const parts = url.pathname.split("/").filter(Boolean);
+        // github.com/user/repo/blob/branch/path -> raw.githubusercontent.com/user/repo/branch/path
+        const i = parts.indexOf("blob");
+        const user = parts[0], repo = parts[1], branch = parts[i+1];
+        const rest = parts.slice(i+2).join("/");
+        const raw = `https://raw.githubusercontent.com/${user}/${repo}/${branch}/${rest}`;
+        return raw;
+      }
+      return u;
+    }catch(e){ return u; }
+  }
+
+  function showTip(msg){
+    el.urlTip.style.display = "block";
+    el.urlTip.textContent = msg;
+    setTimeout(()=>{ el.urlTip.style.display = "none"; }, 6000);
+  }
+
+  function saveDraft(){
+    if(!el.autoSaveToggle.checked) return;
+    try{
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+    }catch(e){}
+  }
+
+  function loadDraft(){
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if(!raw) return;
+    try{
+      const parsed = JSON.parse(raw);
+      if(parsed && Array.isArray(parsed.games)){
+        // Se a versão existir, usa a do rascunho. Caso contrário, assume 1.
+        data.version = parsed.version && typeof parsed.version === 'number' ? parsed.version : 1;
+        data.games = parsed.games;
+        renderList();
+      }
+    }catch(e){}
+  }
+
+  function setRowsCount(){
+    el.count.textContent = String(data.games.length);
+  }
+  
+  // Nova função para atualizar o display da versão
+  function updateVersionDisplay(){
+      el.versionDisplay.textContent = data.version;
+  }
+
+  function renderList(){
+    el.rows.innerHTML = "";
+    setRowsCount();
+    updateVersionDisplay();
+    data.games.forEach((g, i)=>{
+      const tr = document.createElement("div");
+      tr.className = "row";
+      tr.draggable = true;
+      tr.dataset.index = i;
+
+      tr.innerHTML = `
+        <div style="cursor:grab" title="Arrastar para reordenar">▦</div>
+        <div class="cell cell-name" style="display:flex; align-items:center; gap:8px">
+          <img src="${g.image || ''}" onerror="this.src=''; this.style.display='none'">
+          <div>
+            <div style="font-weight:600">${g.name || '—'}</div>
+            <div class="hint" style="white-space:nowrap; text-overflow:ellipsis; overflow:hidden; max-width:420px">${g.description || ''}</div>
+          </div>
+        </div>
+        <div class="cell">${g.genre || '—'}</div>
+        <div class="cell">${g.size || '—'}</div>
+        <div class="cell"><span class="kbd">${g.releaseDate || '—'}</span></div>
+        <div class="cell">${g.highlight ? '<span class="chip">Destaque</span>' : '<span class="hint">—</span>'}</div>
+        <div class="actions">
+          <button class="btn ghost" data-act="edit">Editar</button>
+          <button class="btn danger" data-act="del">Excluir</button>
+        </div>
+      `;
+
+      // drag events
+      tr.addEventListener("dragstart", ev=>{
+        draggingIndex = i;
+        ev.dataTransfer.effectAllowed = "move";
+      });
+      tr.addEventListener("dragover", ev=>{
+        ev.preventDefault();
+        ev.dataTransfer.dropEffect = "move";
+      });
+      tr.addEventListener("drop", ev=>{
+        ev.preventDefault();
+        const to = i;
+        if(draggingIndex === null || draggingIndex === to) return;
+        const item = data.games.splice(draggingIndex,1)[0];
+        data.games.splice(to,0,item);
+        draggingIndex = null;
+        renderList();
+        saveDraft();
+      });
+
+      tr.querySelector('[data-act="edit"]').addEventListener("click", ()=>{
+        loadIntoForm(i);
+      });
+      tr.querySelector('[data-act="del"]').addEventListener("click", ()=>{
+        if(confirm(`Excluir "${g.name}"?`)){
+          data.games.splice(i,1);
+          renderList();
+          saveDraft();
+          // Garante que o modal seja fechado se o item editado for excluído
+          hideModal();
+          resetForm();
+        }
+      });
+
+      el.rows.appendChild(tr);
+    });
+  }
+
+  // --- Funções para controlar o modal ---
+  function showModal() {
+    el.editorModal.classList.add("visible");
+  }
+
+  function hideModal() {
+    el.editorModal.classList.remove("visible");
+  }
+
+  function resetForm(){
+    el.idx.value = "";
+    el.form.reset();
+    el.imagePreview.innerHTML = '<span class="muted">Preview aparecerá aqui</span>';
+    el.editHint.textContent = "Selecione um item ou clique em “Novo jogo”.";
+    el.modalTitle.textContent = "Editor";
+  }
+
+  function loadIntoForm(i){
+    const g = data.games[i];
+    el.idx.value = i;
+    el.name.value = g.name || "";
+    el.description.value = g.description || "";
+    el.image.value = g.image || "";
+    renderImagePreview(g.image || "");
+    el.genre.value = g.genre || "";
+    el.size.value = g.size || "";
+    el.version.value = g.version || "";
+    el.developer.value = g.developer || "";
+    el.releaseDate.value = (g.releaseDate || "").slice(0,10);
+    el.downloadLink.value = g.downloadLink || "";
+    el.highlight.checked = !!g.highlight;
+    el.editHint.textContent = `Editando: ${g.name || '(sem nome)'}`;
+    el.modalTitle.textContent = "Editar Jogo";
+    showModal();
+  }
+
+  function getFormData(){
+    return {
+      name: el.name.value.trim(),
+      description: el.description.value.trim(),
+      image: el.image.value.trim(),
+      genre: el.genre.value.trim(),
+      size: el.size.value.trim(),
+      version: el.version.value.trim(),
+      developer: el.developer.value.trim(),
+      releaseDate: el.releaseDate.value || "",
+      downloadLink: el.downloadLink.value.trim(),
+      highlight: el.highlight.checked
+    };
+  }
+
+  function upsertFromForm(){
+    const item = getFormData();
+
+    // Validações simples
+    if(!item.name){
+      // Substituindo alert por um alerta no console para evitar popups no iframe
+      console.warn("Aviso: Informe o nome do jogo.");
+      el.name.focus(); return false;
+    }
+    if(item.image && !isValidUrl(item.image)){
+      if(!confirm("A URL da imagem parece inválida. Deseja continuar mesmo assim?")) return false;
+    }
+    if(item.downloadLink && !isValidUrl(item.downloadLink)){
+      if(!confirm("A URL de download parece inválida. Deseja continuar mesmo assim?")) return false;
+    }
+
+    const idx = el.idx.value;
+    if(idx === "" || idx === null){
+      data.games.push(item);
+    }else{
+      data.games[Number(idx)] = item;
+    }
+    renderList();
+    saveDraft();
+    return true;
+  }
+
+  function isValidUrl(s){
+    try{ new URL(s); return true; }catch(e){ return false; }
+  }
+
+  function renderImagePreview(url){
+    if(!url){ el.imagePreview.innerHTML = '<span class="muted">Preview aparecerá aqui</span>'; return; }
+    const img = new Image();
+    img.onload = ()=>{
+      el.imagePreview.innerHTML = "";
+      img.style.borderRadius = "8px";
+      img.style.border = "1px solid var(--border)";
+      img.style.maxHeight = "180px";
+      img.style.maxWidth = "100%";
+      el.imagePreview.appendChild(img);
+    };
+    img.onerror = ()=>{
+      el.imagePreview.innerHTML = '<span class="muted">Não foi possível carregar a imagem.</span>';
+    };
+    img.src = url;
+  }
+
+  function downloadFile(filename, text){
+    const blob = new Blob([text], {type:'application/json;charset=utf-8'});
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    URL.revokeObjectURL(a.href);
+    a.remove();
+  }
+
+  function prettyJson(obj){
+    return JSON.stringify(obj, null, 2) + "\n";
+  }
+
+  // --- Events global ---
+  el.btnLoad.addEventListener("click", async ()=>{
+    const rawUrl = normalizeGitHubUrl(el.urlInput.value.trim());
+    if(!rawUrl){ 
+        console.warn("Aviso: Informe a URL do JSON.");
+        return; 
+    }
+    el.urlInput.value = rawUrl;
+    try{
+      const res = await fetch(rawUrl, {cache:"no-store"});
+      if(!res.ok) throw new Error(`HTTP ${res.status}`);
+      const contentType = res.headers.get("content-type") || "";
+      if(!contentType.includes("application/json") && !rawUrl.endsWith(".json")){
+        showTip("Aviso: o servidor não informou 'application/json'; tentando assim mesmo…");
+      }
+      const json = await res.json();
+      if(!json || !Array.isArray(json.games)) throw new Error("Estrutura inválida: esperado { games: [] }.");
+      
+      // Carrega a versão do arquivo ou assume 1
+      data.version = json.version && typeof json.version === 'number' ? json.version : 1;
+      data.games = json.games;
+
+      renderList();
+      saveDraft();
+      try{ localStorage.setItem(URL_KEY, rawUrl); }catch(e){}
+      showTip("JSON carregado com sucesso.");
+    }catch(err){
+      console.error(err);
+      // Substituindo alert por um alerta no console para evitar popups no iframe
+      console.error("Falha ao carregar JSON. Verifique a URL (use o link RAW do GitHub) e permissões CORS. Dica: links com /blob/ serão convertidos automaticamente.");
+    }
+  });
+
+  el.btnAdd.addEventListener("click", ()=>{
+    resetForm();
+    showModal();
+    el.name.focus();
+  });
+
+  el.form.addEventListener("submit", (ev)=>{
+    ev.preventDefault();
+    if(upsertFromForm()){
+      resetForm();
+      hideModal();
+    }
+  });
+
+  el.btnCancel.addEventListener("click", ()=>{
+    resetForm();
+    hideModal();
+  });
+  
+  // Fecha o modal ao clicar fora do conteúdo
+  el.editorModal.addEventListener("click", (e) => {
+    if (e.target === el.editorModal) {
+      hideModal();
+    }
+  });
+
+  el.image.addEventListener("input", ()=> renderImagePreview(el.image.value.trim()));
+
+  el.btnImport.addEventListener("click", ()=> el.fileInput.click());
+  el.fileInput.addEventListener("change", async ()=>{
+    const f = el.fileInput.files[0];
+    if(!f) return;
+    try{
+      const text = await f.text();
+      const json = JSON.parse(text);
+      if(!json || !Array.isArray(json.games)) throw new Error("Estrutura inválida");
+
+      // Carrega a versão do arquivo importado
+      data.version = json.version && typeof json.version === 'number' ? json.version : 1;
+      data.games = json.games;
+
+      renderList();
+      saveDraft();
+      showTip("JSON importado com sucesso.");
+    }catch(e){
+      console.error("Arquivo inválido. Esperado um JSON no formato { games: [...] }.");
+    }finally{
+      el.fileInput.value = "";
+    }
+  });
+
+  el.btnDownload.addEventListener("click", ()=>{
+    // Incrementa a versão antes de exportar
+    data.version = (data.version || 0) + 1;
+    saveDraft(); // Salva a nova versão no rascunho local
+    updateVersionDisplay(); // Atualiza o display na tela
+    downloadFile("games.json", prettyJson(data));
+  });
+
+  el.btnCopy.addEventListener("click", async ()=>{
+    try{
+      // Incrementa a versão antes de copiar
+      data.version = (data.version || 0) + 1;
+      saveDraft(); // Salva a nova versão no rascunho local
+      updateVersionDisplay(); // Atualiza o display na tela
+      await navigator.clipboard.writeText(prettyJson(data));
+      showTip("JSON copiado para a área de transferência.");
+    }catch(e){
+      console.error("Não foi possível copiar. Seu navegador pode bloquear acesso à área de transferência.");
+    }
+  });
+
+  el.btnClearLocal.addEventListener("click", ()=>{
+    if(confirm("Remover rascunho salvo no navegador?")){
+      localStorage.removeItem(STORAGE_KEY);
+      // Reinicia os dados para os valores padrão
+      data = { version: 1, games: [] };
+      renderList();
+      showTip("Rascunho local removido.");
+    }
+  });
+
+  // Ctrl/Cmd + S => download
+  window.addEventListener("keydown", (e)=>{
+    if((e.ctrlKey || e.metaKey) && e.key.toLowerCase()==="s"){
+      e.preventDefault();
+      data.version = (data.version || 0) + 1;
+      saveDraft();
+      updateVersionDisplay();
+      downloadFile("games.json", prettyJson(data));
+    }
+  });
+
+  // Auto-load last URL / draft
+  (function init(){
+    loadDraft();
+    try{
+      const last = localStorage.getItem(URL_KEY);
+      if(!el.urlInput.value && last){ el.urlInput.value = last; }
+    }catch(e){}
+    // Mostra dica de CORS/raw ao abrir
+    showTip("Para repositórios do GitHub, use o link RAW ou cole o link com /blob/ que a página converte automaticamente.");
+  })();
+})();
+</script>
+</body>
+</html>
