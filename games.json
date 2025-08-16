@@ -1,4 +1,5 @@
 {
+  "version": 2,
   "games": [
     {
       "name": "Fran Bow",
@@ -287,8 +288,7 @@
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/djtnvRysge/soh2.html?",
       "highlight": false
-    }
-    ,
+    },
     {
       "name": "Death Ray Manta",
       "description": "Death Ray Manta é um jogo de tiro em arena de formato curto, com visão de cima para baixo, onde você explode inimigos usando raios laser coloridos. Você surge no centro da tela e, momentos depois, a tela se enche de minas, robôs, coelhos e lasers vindos de além das estrelas. Colete gemas espaciais para ganhar um bônus e atire em tudo o que puder para disparar luzes em si mesmo. Mire em sua própria pontuação máxima. Quão longe você consegue chegar no espaço dos peixes?",
@@ -300,8 +300,7 @@
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/8-jnZmHPku/Death_Ray_Manta.html?",
       "highlight": false
-    }
-        ,
+    },
     {
       "name": "Gravity Circuit",
       "description": "Gravity Circuit - um jogo de plataforma 2D cheio de ação e chamativo, no espírito dos clássicos dos consoles.",
@@ -313,8 +312,7 @@
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/lBLq_lGCge/Gravity_Circuit.html?",
       "highlight": false
-    }
-            ,
+    },
     {
       "name": "Forager",
       "description": "Forager é um jogo de mundo aberto 2D inspirado em jogos de exploração, agricultura e artesanato, como Stardew Valley, Terraria e Zelda!",
@@ -326,8 +324,7 @@
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/GKclGG6Kku/Forager__M-Language_.html?",
       "highlight": false
-    }
-    ,
+    },
     {
       "name": "Deltarune",
       "description": "Mergulhe na história paralela de UNDERTALE! Lute ou se salve em batalhas cheias de ação enquanto explora um mundo misterioso ao lado de um elenco cativante de personagens novos e conhecidos. Os capítulos 1 a 4 estarão disponíveis no lançamento, com mais atualizações gratuitas planejadas!",
@@ -339,8 +336,7 @@
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/Dipy2YDkjq/Deltarune_Eng.html?",
       "highlight": false
-    }
-        ,
+    },
     {
       "name": "Grand Theft Auto 3",
       "description": "Bem-vindo a Liberty City. Onde tudo começou. O aclamado sucesso de bilheteria Grand Theft Auto III dá vida ao submundo sombrio e decadente de Liberty City. Com um mundo aberto enorme e diversificado, um elenco insano de personagens de todas as origens e a liberdade de explorar à vontade, Grand Theft Auto III coloca o mundo sombrio, intrigante e implacável do crime ao seu alcance.",
@@ -352,8 +348,7 @@
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/LZVmV8qOge/Grand_Theft_Auto_3.html?",
       "highlight": false
-    }
-        ,
+    },
     {
       "name": "Grand Theft Auto Vice City",
       "description": "Bem-vindos à década de 1980. Da década de cabelos grandes, excessos e ternos em tons pastéis, vem a história da ascensão de um homem ao topo da cadeia criminosa com o retorno de Grand Theft Auto.",
@@ -365,8 +360,7 @@
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/x-JICCMJku/Grand_Theft_Auto_Vice_City.html",
       "highlight": false
-    }
-      ,
+    },
     {
       "name": "To The Moon",
       "description": "Lindo RPG focado em uma história emocionante, disponível em PTBR",
@@ -378,8 +372,7 @@
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/tYGhmHJVku/To_the_Moon_RU.html?",
       "highlight": false
-    }
-          ,
+    },
     {
       "name": "Rakuen (PTBR)",
       "description": "Rakuen é um jogo de aventura sobre um garotinho que vive no hospital. Um dia, o menino pede à sua mãe que o acompanhe até o mundo de fantasia do seu livro de histórias favorito, para que ele possa pedir ao Guardião da Floresta que lhe conceda um desejo. Para realizar seu desejo, o menino deve completar uma série de desafios que envolvem ajudar seus vizinhos no hospital interagindo com seus alter egos no mundo de fantasia...",
@@ -391,8 +384,7 @@
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/IUZ8XARifa/Rakuen-PT-BR.html",
       "highlight": false
-    }
-              ,
+    },
     {
       "name": "Victory Heat Rally",
       "description": "Bem-vindo ao VHR! Desvende os segredos da velocidade nesta experiência de corrida arcade superscaler e super turbo. Domine a pista e derrape até a linha de chegada na jornada para se tornar o campeão do VHRC.",
@@ -404,8 +396,7 @@
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/BCEYAe4Ifa/Victory_Heat_Rally.html?",
       "highlight": false
-    }
-                  ,
+    },
     {
       "name": "Friday Night Funkin",
       "description": "Friday Night Funkin' é um jogo de ritmo musical onde você compete em batalhas musicais de estilo livre. Pressione as setas do teclado no ritmo da música para superar seus oponentes e curtir as batidas incríveis!",
@@ -417,8 +408,7 @@
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/jhB1V4fOge/fridaynightfunkin.html?",
       "highlight": false
-    }
-                      ,
+    },
     {
       "name": "The Elder Scrolls III: Morrowind",
       "description": "Clássico RPG de mundo aberto com uma história rica e expansiva, que inclui todas as expansões oficiais.",
@@ -430,8 +420,7 @@
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/vhVdrxNqfa/Morrowind_GoTYe_RU.html?",
       "highlight": false
-    }
-    ,
+    },
     {
       "name": "Space Cadet Pinball",
       "description": "Pimbal classico do windows",
@@ -443,8 +432,7 @@
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/ivVR6MSkge/Space_Cadet_Pinball.html",
       "highlight": false
-    }
-    ,
+    },
     {
       "name": "Shards of God",
       "description": "Num distante planeta desértico, foi cometido um crime. Quando Madre Tiabata e Irmã Ava decidem resolver o mistério, elas logo se deparam com um enigma impossível: como assassinar um deus?",
@@ -456,8 +444,7 @@
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/HYyxjHxUge/Shards_of_God.html",
       "highlight": false
-    }
-    ,
+    },
     {
       "name": "Shovel Knight Treasure Trove",
       "description": "Shovel Knight Treasure Trove Classico",
@@ -469,8 +456,7 @@
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/KI-0C6odku/Shovel_Knight.html",
       "highlight": false
-    }
-    ,
+    },
     {
       "name": "Rockbot",
       "description": "Um jogo livremente inspirado no antigo estilo clássico de jogos de salto e tiro de 8 bits, com alguns modernos aqui e ali. Rockbot e RockDroid foram criados pela Upperlands e foram inspirados nos antigos jogos NES MegaMan.",
@@ -482,8 +468,7 @@
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/B1R4V1_3ku/RockBot12_-_RockDroid_12.html",
       "highlight": false
-    }
-    ,
+    },
     {
       "name": "Osana's Revenge",
       "description": "Osana's Revenge é um jogo de tiro de cima para baixo repleto de memes e piadas privadas surgidas do drama e dos contratempos de desenvolvimento do Yandere Simulator, em particular, com seu primeiro rival (Osana Najimi) sendo adiado por vários anos. No entanto, você não precisa estar familiarizado com tudo isso para poder jogar e aproveitar.",
@@ -495,8 +480,7 @@
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/X7IWC3ntjq/Osanas_Revenge.html",
       "highlight": false
-    }
-     ,
+    },
     {
       "name": "Panzer Paladin",
       "description": "O sinistro Ravenous e suas legiões de demônios brutais estão prontos para a batalha. A situação é terrível, mas a humanidade tem um último ás na manga: o Paladino Panzer!",
@@ -508,8 +492,7 @@
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/SHOEXuzOfa/PanzerPaladin.html",
       "highlight": false
-    }
-    ,
+    },
     {
       "name": "Mythos",
       "description": "Esote é uma das muitas pequenas cidades localizadas no Grande Labirinto de Dédalis, formada anos depois que o lendário herói Teseu derrotou o terrível minotauro. Embora Teseu tenha conseguido escapar do Labirinto, muitos dos sobreviventes restantes que não conseguiram tiveram que se estabelecer, resignando-se a viver para sempre presos lá dentro. Vocês (Sophos) estão fartos da atitude derrotista que todos os cidadãos carregam no rosto, vocês odeiam a atmosfera solene e tranquila que persiste no dia a dia. Depois de ouvir histórias do Exterior de seus falecidos pais anos atrás, você decide ir ver por si mesmo. O que há para temer? Tome decisões e manipule sua chance de fuga. Depende de você se você ENCONTRA A SAÍDA ou FICA PERDIDO",
@@ -521,8 +504,7 @@
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/FKf4_V_Bge/Mythos.html",
       "highlight": false
-    }
-    ,
+    },
     {
       "name": "Mercenary Kings",
       "description": "Crie seu arsenal para vingar seus camaradas caídos e salvar o mundo das forças assustadoras do CLAW!",
@@ -534,8 +516,7 @@
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/CAptzEwcku/Mercenary_Kings.html",
       "highlight": false
-    }
-    ,
+    },
     {
       "name": "Heart of Darkness",
       "description": "Heart of Darkness usando a reimplementação do motor desenvolvido pelo Amazing Studio.",
@@ -547,8 +528,7 @@
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/M20SI7Suku/Heart_of_Darkness.html",
       "highlight": false
-    }
-    ,
+    },
     {
       "name": "Gato Roboto",
       "description": "Entre em seu aconchegante mecha blindado e parta em uma jornada perigosa por um submundo alienígena cheio de criaturas irritáveis e obstáculos traiçoeiros em um esforço valente para salvar seu capitão encalhado e sua nave espacial acidentada.",
@@ -560,8 +540,7 @@
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/fOkNZy7Oge/Gato_Roboto.html",
       "highlight": false
-    }
-    ,
+    },
     {
       "name": "Disc Room",
       "description": "Você está pronto para ser cortado ao meio? O ano é 2089 e um disco gigante apareceu na órbita de Júpiter. Entre no enorme traje espacial de um cientista corajoso e explore este extenso matadouro intergaláctico. Explore a expansiva nave de disco em órbita, movendo-se de sala em sala, sobrevivendo e completando objetivos cada vez mais complexos estabelecidos. Use habilidades desbloqueadas para superar dezenas de tipos diferentes de discos enquanto resolve quebra-cabeças misteriosos. E lembre-se: o que te mata só te torna mais forte.",
@@ -573,8 +552,7 @@
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/PEtDP-ygfa/Disc_Room.html",
       "highlight": false
-    }
-    ,
+    },
     {
       "name": "Deltarune (PTBR)",
       "description": "Mergulhe na história paralela de UNDERTALE! Lute ou poupe seu caminho através de batalhas cheias de ação enquanto explora um mundo misterioso ao lado de um elenco cativante de personagens novos e familiares. Os capítulos 1 a 4 estarão disponíveis no lançamento, com mais planejados como atualizações gratuitas!",
@@ -586,8 +564,7 @@
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/LnJlwIKbfa/Deltarune.html",
       "highlight": false
-    }
-    ,
+    },
     {
       "name": "Need For Speed II SE",
       "description": "Need for Speed II é um videogame de corrida lançado no final da década de 1990, apresentando uma variedade de carros e pistas exóticas do mundo todo, permitindo que os jogadores corram contra oponentes controlados por computador ou jogadores humanos em vários modos, incluindo corrida única e torneio.",
@@ -599,8 +576,7 @@
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/ojJu5-wkjq/Need_For_Speed_II_SE.html",
       "highlight": false
-    }
-    ,
+    },
     {
       "name": "FEZ",
       "description": "Gomez é uma criatura 2D que vive em um mundo 2D. Será? Quando a existência de uma misteriosa terceira dimensão é revelada a ele, Gomez é enviado em uma jornada que irá levá-lo a cada canto do tempo e do espaço.",
@@ -612,8 +588,7 @@
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/jpvsoBMpge/fez.html",
       "highlight": false
-    }
-    ,
+    },
     {
       "name": "Dust: An Elysian Tail",
       "description": "Assuma a aparência da impetuosa guardião da espada nimbat do Dust: An Elysian Tail com esta máscara da Fidget.",
@@ -625,8 +600,7 @@
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/JeCPvlCrku/Dust_-_an_Elysian_Tail.html",
       "highlight": false
-    }
-    ,
+    },
     {
       "name": "OpenRCT2",
       "description": "OpenRCT2 é uma reimplementação de código aberto do RollerCoaster Tycoon 2.",
@@ -638,8 +612,7 @@
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/wZcttK2Gfa/OpenRCT2.html",
       "highlight": false
-    }
-    ,
+    },
     {
       "name": "Timespinner",
       "description": "Viaje de volta no tempo para mudar o próprio destino, nesta aventura lindamente elaborada e baseada em histórias, inspirada nos clássicos jogos de plataforma de ação dos anos 90.",
@@ -651,8 +624,7 @@
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/IFO0u-obku/timespinner.html",
       "highlight": false
-    }
-    ,
+    },
     {
       "name": "Undertale (PT-BR)",
       "description": "UNDERTALE! O RPG onde você não precisa destruir ninguém.",
@@ -664,8 +636,7 @@
       "releaseDate": "2024-05-15",
       "downloadLink": "https://www.4shared.com/zip/q2f-OPa2ku/Undertale_ptbr.html",
       "highlight": false
-    }
-    ,
+    },
     {
       "name": "AM2R",
       "description": "Mais um remake de Metroid 2. Um jogo de ação e aventura desenvolvido pelo programador argentino Milton Guasti (também conhecido como DoctorM64).",
@@ -677,8 +648,7 @@
       "releaseDate": "2024-05-15",
       "downloadLink": "https://www.4shared.com/zip/fZaYZ3Pyjq/AM2R.html",
       "highlight": false
-    }
-    ,
+    },
     {
       "name": "Pokemon Rejuvenation",
       "description": "A região de Aevium viveu um período de paz desde então. Pessoas e criaturas que habitam as terras se unem para criar uma região na qual vale a pena viver. No entanto, a organização sombria e sinistra, Team Xen, surge das sombras para destruir a pouca paz que resta à região.",
@@ -690,8 +660,7 @@
       "releaseDate": "2024-05-15",
       "downloadLink": "https://www.4shared.com/zip/2eHmENFtge/rejuvenation.html",
       "highlight": false
-    }
-    ,
+    },
     {
       "name": "PokeMMO",
       "description": "Famoso Pokemon Online, para duvidas, entre em nosso discord para ajuda com a instalação.",
@@ -703,6 +672,66 @@
       "releaseDate": "2024-05-15",
       "downloadLink": "https://www.4shared.com/zip/2DGj1Ymjku/PokeMMO.html",
       "highlight": true
+    },
+    {
+      "name": "Crashlands",
+      "description": "Caia em terra e navegue, lute e busque seu caminho através deste ARPG de Crafting baseado em história transbordando de ousadia! Torne-se Flux Dabes, um caminhoneiro galáctico cuja última remessa descarrila por uma ameaça alienígena com tiras no queixo chamada Hewgodooko, deixando você preso em um planeta alienígena. À medida que você se esforça para recuperar seus pacotes, você se envolverá em uma trama nefasta de dominação mundial, que exigirá que toda a sua inteligência e ambos os glúteos sejam superados. Aprenda receitas da vida senciente local, faça novos amigos, descubra segredos antigos e chefes mortais, dome tudo e construa um lar longe de casa enquanto aprende a prosperar após um pouso forçado no planeta Woanope.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/crashlands/screenshot.png",
+      "genre": "",
+      "size": "80Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/u16nOo9ffa/Crashlands.html",
+      "highlight": false
+    },
+    {
+      "name": "Beard Blade",
+      "description": "Corra e pule por locais tropicais de 16 bits enquanto se defende dos inimigos com o poder da barba metamorfa de Branson. Visite o barbeiro para endurecer sua barba com novas habilidades e confrontar os ladrões Smuglins.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/beardblade/screenshot.png",
+      "genre": "",
+      "size": "53Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/JJ9BlVGoge/Beard_Blade.html",
+      "highlight": false
+    },
+    {
+      "name": "Steamworld Dig",
+      "description": "SteamWorld Dig é uma aventura de mineração de plataforma com fortes influências Metroidvanianas. Assuma o papel de Rusty, um robô a vapor de mineração solitário, ao chegar a uma antiga cidade mineira em grande necessidade. Cave seu caminho através da velha terra, ganhando riquezas enquanto descobre a antiga ameaça que se esconde abaixo.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/steamworlddig/screenshot.png",
+      "genre": "",
+      "size": "125Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/SXu4V0NNku/Steamworld_Dig.html",
+      "highlight": false
+    },
+    {
+      "name": "Steamworld Dig 2",
+      "description": "SteamWorld Dig 2 leva você em uma aventura de mineração de plataforma forjada nas chamas de Metroidvania. Quando uma antiga cidade comercial é atingida por terremotos misteriosos, cabe a um robô a vapor solitário e seu improvável companheiro descobrir os terrores trêmulos que estão por baixo.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/steamworlddig2/screenshot.png",
+      "genre": "",
+      "size": "210Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/xDOlJPS0jq/Steamworld_Dig2.html",
+      "highlight": false
+    },
+    {
+      "name": "Pokemon Reborn",
+      "description": "Reborn é um jogo gratuito para download no estilo de 3a geração que apresenta todo o conteúdo até a Geração 7. Experimente uma camada de estratégia nunca antes vista com os efeitos de campo totalmente originais, usando o terreno para superar e dominar seu oponente! Colete, treine e lute com todas as 807 espécies disponíveis no jogo e enfrente Líderes de Ginásio de todos os 18 tipos enquanto luta para restaurar a prosperidade de Reborn!",
+      "image": "https://www.rebornevo.com/images/pr/screenshots/16-2.png",
+      "genre": "",
+      "size": "645Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/0i_Q3xKzge/Pokemon_Reborn.html",
+      "highlight": false
     }
   ]
 }
