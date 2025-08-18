@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "games": [
     {
       "name": "Fran Bow",
@@ -35,7 +35,7 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/rar/W8K3yZTtku/iconoclasts.html",
-      "highlight": true
+      "highlight": false
     },
     {
       "name": "Ocean'sHeart",
@@ -731,6 +731,90 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/0i_Q3xKzge/Pokemon_Reborn.html",
+      "highlight": false
+    },
+    {
+      "name": "The Happyhills Homicide",
+      "description": "Bem-vindo a Happyhills, a cidade onde você pode satisfazer seus desejos mais profundos, realizar seus sonhos mais loucos e massacrar qualquer um em seu caminho. Neste caso, todos os três são iguais. Jogue como um slasher estiloso dos anos 80 e mate em diferentes níveis. O jogo oferece 20 níveis completamente variados, cada um com um estilo de jogo e uma maneira de matar completamente diferentes. Você gosta de um desafio? Não se preocupe. O jogo aumentará em dificuldade a cada nível, nem todas as vítimas são tão fáceis quanto as outras. De um simples homem dormindo em sua poltrona a lutar contra uma gangue de motoqueiros em um bar. E não pense por um minuto que você pode realizar esses atos hediondos sem um detetive ambicioso em suas costas.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/happyhills/screenshot.png",
+      "genre": "",
+      "size": "39Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/aLT92Ytjge/The_Happyhills_Homicide.html",
+      "highlight": false
+    },
+    {
+      "name": "Bit Trip Runner 2",
+      "description": "Também conhecido como \"Runner2: Future Legend of Rhythm Alien\", é um jogo eletrônico de plataforma baseado em ritmo desenvolvido pela Gaijin Games. Lançado em 2013, é a sequência do Bit.Trip Runner original. O jogo apresenta CommanderVideo, o personagem principal, navegando por vários níveis repletos de obstáculos e desafios, tudo sincronizado com uma trilha sonora eletrônica envolvente. Os jogadores devem executar saltos, deslizes e chutes precisos ao ritmo da música, criando uma experiência de jogo dinâmica e rítmica. Com seus visuais vibrantes, música cativante e jogabilidade viciante, Bit.Trip Runner2 oferece uma abordagem única e divertida ao gênero de plataforma.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/bittriprunner2/screenshot.png",
+      "genre": "",
+      "size": "270Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/klU-Edutfa/Bit_Trip_Runner_2_.html",
+      "highlight": false
+    },
+    {
+      "name": "Carmageddon",
+      "description": "Carmageddon é a sensação original de direção livre, onde pedestres (e vacas!) empatam pontos, e seus oponentes são um bando de malucos em uma mistura distorcida de máquinas automotivas de matar.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/carmageddon/screenshot.jpg",
+      "genre": "",
+      "size": "260Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/YbC1YUrige/Carmageddon__Splat_Pack.html",
+      "highlight": false
+    },
+    {
+      "name": "Kingdom Shell",
+      "description": "Kingdom Shell é um jogo de plataforma 2D com elementos de soulslike e metroidvania, ambientado em um reino ameaçado por criaturas pesadelo. O jogador assume o papel de Elias, um meio-sangue que deve proteger o reino após a concha mágica que o protegia ser destruída.",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1154090/capsule_616x353.jpg?t=1745491282",
+      "genre": "",
+      "size": "129Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/rar/ccl4rAcajq/Kingdom_Shell__eng_ru_esp_.html",
+      "highlight": true
+    },
+    {
+      "name": "Wipeout",
+      "description": "Wipeout é um jogo de corrida ambientado em 2052, onde os jogadores competem na liga de corrida antigravidade F3600. O jogo permite que o jogador pilote uma das diversas aeronaves em corridas em diversas pistas diferentes.",
+      "image": "https://raw.githubusercontent.com/PortsMaster-MV/PortMaster-MV-New/main/ports/wipeout/screenshot.jpg",
+      "genre": "",
+      "size": "140Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/xi2Qaf_Rge/Wipeout.html",
+      "highlight": false
+    },
+    {
+      "name": "Yarntown",
+      "description": "Você chegou na noite da caçada. As ruas desta cidade gótica e amaldiçoada estão infestadas de feras, e o que aconteceu com os homens que tentaram caçá-las antes? Explore as estradas sinuosas, enfrente inimigos poderosos e desvende os segredos obscuros de Yarntown.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/yarntown/screenshot.png",
+      "genre": "",
+      "size": "21Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/oh8SZMVige/Yarntown.html",
+      "highlight": false
+    },
+    {
+      "name": "Lost Potato",
+      "description": "Lost Potato é um roguelite minimalista com perspectiva de cima para baixo, onde você não pode causar dano direto aos inimigos. Empurre-os contra espinhos, reflita balas e ajude uma batata jovem a encontrar a saída de uma selva cheia de tribos devoradoras de homens!",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/lostpotato/screenshot.png",
+      "genre": "",
+      "size": "42Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/eLk2z6bcfa/Lost_Potato__multi_lang_.html",
       "highlight": false
     }
   ]
