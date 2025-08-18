@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "games": [
     {
       "name": "Fran Bow",
@@ -652,7 +652,7 @@
     {
       "name": "Pokemon Rejuvenation",
       "description": "A região de Aevium viveu um período de paz desde então. Pessoas e criaturas que habitam as terras se unem para criar uma região na qual vale a pena viver. No entanto, a organização sombria e sinistra, Team Xen, surge das sombras para destruir a pouca paz que resta à região.",
-      "image": "https://i.imgur.com/oQQnXax.png",
+      "image": "https://i.ytimg.com/vi/BQacr62pKao/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBFYWop5jbAycuaOvUY4pXkLCeFPw",
       "genre": "RPG",
       "size": "1,4Gb",
       "version": "",
