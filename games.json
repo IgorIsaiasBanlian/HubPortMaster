@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "games": [
     {
       "name": "Fran Bow",
@@ -227,7 +227,7 @@
       "developer": "",
       "releaseDate": "2024-05-15",
       "downloadLink": "https://www.4shared.com/zip/5AN6Y-Jjjq/Hojiya.html?",
-      "highlight": true
+      "highlight": false
     },
     {
       "name": "TMNT: Shredder's Revenge",
