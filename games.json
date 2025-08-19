@@ -734,21 +734,6 @@
       "highlight": false
     },
     {
-      "name": "Golden Warden",
-      "description": "Um jogo de batalha desonesto com controles fáceis. Escolha uma carta a cada turno, obtenha melhorias, colete ouro para fortalecer suas armas, derrube (ou evite) inimigos enquanto mira nas profundezas da masmorra e tente reivindicar o tesouro que o Guardião Dourado supostamente guarda.",
-      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/goldenwarden/screenshot.png",
-      "genre": "",
-      "size": "203Mb",
-      "version": "",
-      "developer": "",
-      "releaseDate": "",
-<<<<<<< HEAD
-      "downloadLink": "https://www.4shared.com/zip/uVnbjxeojq/Golden_Warden.html",
-=======
-      "downloadLink": "https://www.4shared.com/zip/aLT92Ytjge/The_Happyhills_Homicide.html",
-      "highlight": false
-    },
-    {
       "name": "Bit Trip Runner 2",
       "description": "Também conhecido como \"Runner2: Future Legend of Rhythm Alien\", é um jogo eletrônico de plataforma baseado em ritmo desenvolvido pela Gaijin Games. Lançado em 2013, é a sequência do Bit.Trip Runner original. O jogo apresenta CommanderVideo, o personagem principal, navegando por vários níveis repletos de obstáculos e desafios, tudo sincronizado com uma trilha sonora eletrônica envolvente. Os jogadores devem executar saltos, deslizes e chutes precisos ao ritmo da música, criando uma experiência de jogo dinâmica e rítmica. Com seus visuais vibrantes, música cativante e jogabilidade viciante, Bit.Trip Runner2 oferece uma abordagem única e divertida ao gênero de plataforma.",
       "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/bittriprunner2/screenshot.png",
@@ -818,7 +803,30 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/eLk2z6bcfa/Lost_Potato__multi_lang_.html",
->>>>>>> 8b0fba4 (Update games.json)
+      "highlight": false
+    },
+    {
+      "name": "The Happyhills Homicide",
+      "description": "Bem-vindo a Happyhills, a cidade onde você pode satisfazer seus desejos mais profundos, realizar seus sonhos mais loucos e massacrar qualquer um em seu caminho. Neste caso, todos os três são iguais. Jogue como um slasher estiloso dos anos 80 e mate em diferentes níveis. O jogo oferece 20 níveis completamente variados, cada um com um estilo de jogo e uma maneira de matar completamente diferentes. Você gosta de um desafio? Não se preocupe. O jogo aumentará em dificuldade a cada nível, nem todas as vítimas são tão fáceis quanto as outras. De um simples homem dormindo em sua poltrona a lutar contra uma gangue de motoqueiros em um bar. E não pense por um minuto que você pode realizar esses atos hediondos sem um detetive ambicioso em suas costas.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/happyhills/screenshot.png",
+      "genre": "",
+      "size": "39Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/aLT92Ytjge/The_Happyhills_Homicide.html",
+      "highlight": false
+    },
+    {
+      "name": "Golden Warden",
+      "description": "Um jogo de batalha desonesto com controles fáceis. Escolha uma carta a cada turno, obtenha melhorias, colete ouro para fortalecer suas armas, derrube (ou evite) inimigos enquanto mira nas profundezas da masmorra e tente reivindicar o tesouro que o Guardião Dourado supostamente guarda.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/goldenwarden/screenshot.png",
+      "genre": "",
+      "size": "203Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/uVnbjxeojq/Golden_Warden.html",
       "highlight": false
     }
   ]
