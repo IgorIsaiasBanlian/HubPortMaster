@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 6,
   "games": [
     {
       "name": "Fran Bow",
@@ -827,6 +827,18 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/uVnbjxeojq/Golden_Warden.html",
+      "highlight": false
+    },
+    {
+      "name": "GTA Vice City (PTBR)",
+      "description": "Bem-vindos à década de 1980. Da década de cabelos grandes, excessos e ternos em tons pastéis, vem a história da ascensão de um homem ao topo da cadeia criminosa com o retorno de Grand Theft Auto.",
+      "image": "https://raw.githubusercontent.com/PortsMaster-MV/PortMaster-MV-New/main/ports/gtavc/screenshot.jpg",
+      "genre": "Mundo Aberto",
+      "size": "1,3Gb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/EHrt-celfa/Grand_Theft_Auto_Vice_City_PTB.html",
       "highlight": false
     }
   ]
