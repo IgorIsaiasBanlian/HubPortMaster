@@ -1,5 +1,5 @@
 {
-  "version": 6,
+  "version": 7,
   "games": [
     {
       "name": "Fran Bow",
@@ -839,6 +839,18 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/EHrt-celfa/Grand_Theft_Auto_Vice_City_PTB.html",
+      "highlight": false
+    },
+    {
+      "name": "Grand Theft Auto 3 10th Anniversary Edition",
+      "description": "Bem-vindo a Liberty City. Onde tudo começou. O aclamado sucesso de bilheteria Grand Theft Auto III dá vida ao submundo sombrio e decadente de Liberty City. Com um mundo aberto enorme e diversificado, um elenco insano de personagens de todas as origens e a liberdade de explorar à vontade, Grand Theft Auto III coloca o mundo sombrio, intrigante e implacável do crime ao seu alcance.",
+      "image": "https://raw.githubusercontent.com/PortsMaster-MV/PortMaster-MV-New/main/ports/gta3/screenshot.jpg",
+      "genre": "",
+      "size": "706Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/M3bMssBage/Grand_Theft_Auto_3_10th_Annive.html",
       "highlight": false
     }
   ]
