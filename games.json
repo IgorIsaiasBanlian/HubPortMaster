@@ -1,5 +1,5 @@
 {
-  "version": 8,
+  "version": 9,
   "games": [
     {
       "name": "Fran Bow",
@@ -335,30 +335,6 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/Dipy2YDkjq/Deltarune_Eng.html?",
-      "highlight": false
-    },
-    {
-      "name": "Grand Theft Auto 3",
-      "description": "Bem-vindo a Liberty City. Onde tudo começou. O aclamado sucesso de bilheteria Grand Theft Auto III dá vida ao submundo sombrio e decadente de Liberty City. Com um mundo aberto enorme e diversificado, um elenco insano de personagens de todas as origens e a liberdade de explorar à vontade, Grand Theft Auto III coloca o mundo sombrio, intrigante e implacável do crime ao seu alcance.",
-      "image": "https://raw.githubusercontent.com/PortsMaster-MV/PortMaster-MV-New/main/ports/gta3/screenshot.jpg",
-      "genre": "MundoAberto",
-      "size": "706,9Mb",
-      "version": "",
-      "developer": "",
-      "releaseDate": "",
-      "downloadLink": "https://www.4shared.com/zip/LZVmV8qOge/Grand_Theft_Auto_3.html?",
-      "highlight": false
-    },
-    {
-      "name": "Grand Theft Auto Vice City",
-      "description": "Bem-vindos à década de 1980. Da década de cabelos grandes, excessos e ternos em tons pastéis, vem a história da ascensão de um homem ao topo da cadeia criminosa com o retorno de Grand Theft Auto.",
-      "image": "https://raw.githubusercontent.com/PortsMaster-MV/PortMaster-MV-New/main/ports/gtavc/screenshot.jpg",
-      "genre": "MundoAberto",
-      "size": "1,2Gb",
-      "version": "",
-      "developer": "",
-      "releaseDate": "",
-      "downloadLink": "https://www.4shared.com/zip/x-JICCMJku/Grand_Theft_Auto_Vice_City.html",
       "highlight": false
     },
     {
