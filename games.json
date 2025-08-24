@@ -1,5 +1,5 @@
 {
-  "version": 9,
+  "version": 10,
   "games": [
     {
       "name": "Fran Bow",
@@ -839,6 +839,18 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/uKVsEEpdfa/talumos.html",
+      "highlight": false
+    },
+    {
+      "name": "Windmills",
+      "description": "Domine suas técnicas de combate e explore um mundo mágico nesta metroidvania focada em combate. Ajude o narrador não confiável a completar sua história, que muda dependendo das ações do jogador.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/windmills/screenshot.png",
+      "genre": "",
+      "size": "121Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/22j52Ftzfa/Windmills.html",
       "highlight": false
     }
   ]
