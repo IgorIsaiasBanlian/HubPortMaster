@@ -1,5 +1,5 @@
 {
-  "version": 7,
+  "version": 8,
   "games": [
     {
       "name": "Fran Bow",
@@ -851,6 +851,18 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/M3bMssBage/Grand_Theft_Auto_3_10th_Annive.html",
+      "highlight": false
+    },
+    {
+      "name": "Fables of Talumos",
+      "description": "Fables of Talumos é um jogo de aventura pixel-art ambientado no mundo de fantasia de Talumos. O jogo tem combate rápido e desafiador, personagens interessantes, armas e itens poderosos e um cenário de fantasia único.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/talumos/screenshot.png",
+      "genre": "",
+      "size": "189Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/uKVsEEpdfa/talumos.html",
       "highlight": false
     }
   ]
