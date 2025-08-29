@@ -1,5 +1,5 @@
 {
-  "version": 10,
+  "version": 11,
   "games": [
     {
       "name": "Fran Bow",
@@ -851,6 +851,78 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/22j52Ftzfa/Windmills.html",
+      "highlight": false
+    },
+    {
+      "name": "Deirdre",
+      "description": "Deirdre é um jogo Action Roguelike onde você luta contra uma Manopla de Chefes em loop.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/deirdre/screenshot.png",
+      "genre": "",
+      "size": "13,2Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/9I4AY9i4jq/Deirdre.html",
+      "highlight": false
+    },
+    {
+      "name": "Devil Spire",
+      "description": "Uma enorme torre de pedra surgiu um dia numa terra devastada pela guerra, pela peste e pela fome. Você é um dos muitos atraídos por lendas de fortuna e salvação. Você sucumbirá a isso, conquistá-lo-á ou descobrirá os segredos lá no fundo?",
+      "image": "https://img.itch.zone/aW1hZ2UvMTMzNDQyNy83NzYzMDE5LmpwZw==/original/RrXk1G.jpg",
+      "genre": "",
+      "size": "78,2",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/2KPTdQD8ku/Devil_Spire.html",
+      "highlight": false
+    },
+    {
+      "name": "LUFTRAUSERS",
+      "description": "Os céus serão incendiados e os mares transbordarão de destroços no elegante jogo de tiro arcade LUFTRAUSERS da Vlambeer! Selecione entre mais de 125 combinações de armas, corpos e sistemas de propulsão e suba aos céus para lutar contra aviões de combate inimigos, navios de guerra, submarinos e ases rivais por glória, honra e pontuações altas. Seja um voluntário corajoso em uma das mais de 100 missões ousadas para desbloquear novas combinações de Rauser e variações de cores vibrantes e se tornar o piloto Rauser mais lendário de todos os tempos!",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/luftrausers/screenshot.png",
+      "genre": "",
+      "size": "84,7Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/Be6sl-w-ge/LUFTRAUSERS.html",
+      "highlight": false
+    },
+    {
+      "name": "Terra Flame",
+      "description": "Terra Flame é um shoot ’em up horizontal inspirado na década de 1990, com gráficos autênticos de pixel art e uma trilha sonora chiptune criada com fontes sonoras clássicas do Mega Drive.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/terraflame/screenshot.png",
+      "genre": "",
+      "size": "325,9Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/uRfNdbCSge/Terra_Flame.html",
+      "highlight": false
+    },
+    {
+      "name": "Tutoretta's Easy Quest",
+      "description": "Curto jogo de Dungeon Crawler em primeira pessoa com PixelArt e gráficos semelhantes aos do Paper.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/tutoretta/screenshot.png",
+      "genre": "",
+      "size": "14,3Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/bR2SsDnWjq/Tutorettas_Easy_Quest.html",
+      "highlight": false
+    },
+    {
+      "name": "Xanthiom Zero",
+      "description": "Assuma o controle do Capitão Grisham enquanto investiga o desconhecido Planeta 4-514. Colete itens para ajudar você a progredir mais profundamente nas profundezas do planeta e fortaleça suas armas para lutar contra inimigos e chefes poderosos! Explore vários biomas, cada um com seus próprios perigos para navegar, e descubra os mistérios que estão por baixo da superfície!",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/xanthiom/screenshot.png",
+      "genre": "",
+      "size": "78,8Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/-iMdjjZTku/Xanthiom_Zero.html",
       "highlight": false
     }
   ]
