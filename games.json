@@ -1,5 +1,5 @@
 {
-  "version": 11,
+  "version": 12,
   "games": [
     {
       "name": "Fran Bow",
@@ -923,6 +923,18 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/-iMdjjZTku/Xanthiom_Zero.html",
+      "highlight": false
+    },
+    {
+      "name": "Aestheta",
+      "description": "Esteta é um jogo de cartas de estratégia \"real\" roguelike sobre guerreiros de todo o espaço e tempo, lutando para reivindicar um desejo da Estrela de Aestheta. Invoque tropas, edifícios e feitiços para destruir as torres do seu oponente antes que eles destruam as suas!",
+      "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3730600/7d6947b0342af0680568f80d9a967f3fb218208e/ss_7d6947b0342af0680568f80d9a967f3fb218208e.600x338.jpg?t=1749058996",
+      "genre": "",
+      "size": "82Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/6F2gJ8tKge/Aestheta.html",
       "highlight": false
     }
   ]
