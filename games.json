@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 12,
   "games": [
     {
       "name": "Fran Bow",
@@ -335,30 +335,6 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/Dipy2YDkjq/Deltarune_Eng.html?",
-      "highlight": false
-    },
-    {
-      "name": "Grand Theft Auto 3",
-      "description": "Bem-vindo a Liberty City. Onde tudo começou. O aclamado sucesso de bilheteria Grand Theft Auto III dá vida ao submundo sombrio e decadente de Liberty City. Com um mundo aberto enorme e diversificado, um elenco insano de personagens de todas as origens e a liberdade de explorar à vontade, Grand Theft Auto III coloca o mundo sombrio, intrigante e implacável do crime ao seu alcance.",
-      "image": "https://raw.githubusercontent.com/PortsMaster-MV/PortMaster-MV-New/main/ports/gta3/screenshot.jpg",
-      "genre": "MundoAberto",
-      "size": "706,9Mb",
-      "version": "",
-      "developer": "",
-      "releaseDate": "",
-      "downloadLink": "https://www.4shared.com/zip/LZVmV8qOge/Grand_Theft_Auto_3.html?",
-      "highlight": false
-    },
-    {
-      "name": "Grand Theft Auto Vice City",
-      "description": "Bem-vindos à década de 1980. Da década de cabelos grandes, excessos e ternos em tons pastéis, vem a história da ascensão de um homem ao topo da cadeia criminosa com o retorno de Grand Theft Auto.",
-      "image": "https://raw.githubusercontent.com/PortsMaster-MV/PortMaster-MV-New/main/ports/gtavc/screenshot.jpg",
-      "genre": "MundoAberto",
-      "size": "1,2Gb",
-      "version": "",
-      "developer": "",
-      "releaseDate": "",
-      "downloadLink": "https://www.4shared.com/zip/x-JICCMJku/Grand_Theft_Auto_Vice_City.html",
       "highlight": false
     },
     {
@@ -827,6 +803,138 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/uVnbjxeojq/Golden_Warden.html",
+      "highlight": false
+    },
+    {
+      "name": "GTA Vice City (PTBR)",
+      "description": "Bem-vindos à década de 1980. Da década de cabelos grandes, excessos e ternos em tons pastéis, vem a história da ascensão de um homem ao topo da cadeia criminosa com o retorno de Grand Theft Auto.",
+      "image": "https://raw.githubusercontent.com/PortsMaster-MV/PortMaster-MV-New/main/ports/gtavc/screenshot.jpg",
+      "genre": "Mundo Aberto",
+      "size": "1,3Gb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/EHrt-celfa/Grand_Theft_Auto_Vice_City_PTB.html",
+      "highlight": false
+    },
+    {
+      "name": "Grand Theft Auto 3 10th Anniversary Edition",
+      "description": "Bem-vindo a Liberty City. Onde tudo começou. O aclamado sucesso de bilheteria Grand Theft Auto III dá vida ao submundo sombrio e decadente de Liberty City. Com um mundo aberto enorme e diversificado, um elenco insano de personagens de todas as origens e a liberdade de explorar à vontade, Grand Theft Auto III coloca o mundo sombrio, intrigante e implacável do crime ao seu alcance.",
+      "image": "https://raw.githubusercontent.com/PortsMaster-MV/PortMaster-MV-New/main/ports/gta3/screenshot.jpg",
+      "genre": "",
+      "size": "706Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/M3bMssBage/Grand_Theft_Auto_3_10th_Annive.html",
+      "highlight": false
+    },
+    {
+      "name": "Fables of Talumos",
+      "description": "Fables of Talumos é um jogo de aventura pixel-art ambientado no mundo de fantasia de Talumos. O jogo tem combate rápido e desafiador, personagens interessantes, armas e itens poderosos e um cenário de fantasia único.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/talumos/screenshot.png",
+      "genre": "",
+      "size": "189Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/uKVsEEpdfa/talumos.html",
+      "highlight": false
+    },
+    {
+      "name": "Windmills",
+      "description": "Domine suas técnicas de combate e explore um mundo mágico nesta metroidvania focada em combate. Ajude o narrador não confiável a completar sua história, que muda dependendo das ações do jogador.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/windmills/screenshot.png",
+      "genre": "",
+      "size": "121Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/22j52Ftzfa/Windmills.html",
+      "highlight": false
+    },
+    {
+      "name": "Deirdre",
+      "description": "Deirdre é um jogo Action Roguelike onde você luta contra uma Manopla de Chefes em loop.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/deirdre/screenshot.png",
+      "genre": "",
+      "size": "13,2Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/9I4AY9i4jq/Deirdre.html",
+      "highlight": false
+    },
+    {
+      "name": "Devil Spire",
+      "description": "Uma enorme torre de pedra surgiu um dia numa terra devastada pela guerra, pela peste e pela fome. Você é um dos muitos atraídos por lendas de fortuna e salvação. Você sucumbirá a isso, conquistá-lo-á ou descobrirá os segredos lá no fundo?",
+      "image": "https://img.itch.zone/aW1hZ2UvMTMzNDQyNy83NzYzMDE5LmpwZw==/original/RrXk1G.jpg",
+      "genre": "",
+      "size": "78,2",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/2KPTdQD8ku/Devil_Spire.html",
+      "highlight": false
+    },
+    {
+      "name": "LUFTRAUSERS",
+      "description": "Os céus serão incendiados e os mares transbordarão de destroços no elegante jogo de tiro arcade LUFTRAUSERS da Vlambeer! Selecione entre mais de 125 combinações de armas, corpos e sistemas de propulsão e suba aos céus para lutar contra aviões de combate inimigos, navios de guerra, submarinos e ases rivais por glória, honra e pontuações altas. Seja um voluntário corajoso em uma das mais de 100 missões ousadas para desbloquear novas combinações de Rauser e variações de cores vibrantes e se tornar o piloto Rauser mais lendário de todos os tempos!",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/luftrausers/screenshot.png",
+      "genre": "",
+      "size": "84,7Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/Be6sl-w-ge/LUFTRAUSERS.html",
+      "highlight": false
+    },
+    {
+      "name": "Terra Flame",
+      "description": "Terra Flame é um shoot ’em up horizontal inspirado na década de 1990, com gráficos autênticos de pixel art e uma trilha sonora chiptune criada com fontes sonoras clássicas do Mega Drive.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/terraflame/screenshot.png",
+      "genre": "",
+      "size": "325,9Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/uRfNdbCSge/Terra_Flame.html",
+      "highlight": false
+    },
+    {
+      "name": "Tutoretta's Easy Quest",
+      "description": "Curto jogo de Dungeon Crawler em primeira pessoa com PixelArt e gráficos semelhantes aos do Paper.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/tutoretta/screenshot.png",
+      "genre": "",
+      "size": "14,3Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/bR2SsDnWjq/Tutorettas_Easy_Quest.html",
+      "highlight": false
+    },
+    {
+      "name": "Xanthiom Zero",
+      "description": "Assuma o controle do Capitão Grisham enquanto investiga o desconhecido Planeta 4-514. Colete itens para ajudar você a progredir mais profundamente nas profundezas do planeta e fortaleça suas armas para lutar contra inimigos e chefes poderosos! Explore vários biomas, cada um com seus próprios perigos para navegar, e descubra os mistérios que estão por baixo da superfície!",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/xanthiom/screenshot.png",
+      "genre": "",
+      "size": "78,8Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/-iMdjjZTku/Xanthiom_Zero.html",
+      "highlight": false
+    },
+    {
+      "name": "Aestheta",
+      "description": "Esteta é um jogo de cartas de estratégia \"real\" roguelike sobre guerreiros de todo o espaço e tempo, lutando para reivindicar um desejo da Estrela de Aestheta. Invoque tropas, edifícios e feitiços para destruir as torres do seu oponente antes que eles destruam as suas!",
+      "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3730600/7d6947b0342af0680568f80d9a967f3fb218208e/ss_7d6947b0342af0680568f80d9a967f3fb218208e.600x338.jpg?t=1749058996",
+      "genre": "",
+      "size": "82Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/6F2gJ8tKge/Aestheta.html",
       "highlight": false
     }
   ]
