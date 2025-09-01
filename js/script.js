@@ -167,7 +167,6 @@ function renderGames() {
     `).join('');
 }
 
-// Função para abrir o modal de detalhes do jogo
 function openGameModal(gameId) {
     const game = allGames.find(g => g.id === gameId);
     if (!game) return;
@@ -175,59 +174,15 @@ function openGameModal(gameId) {
     document.getElementById('modalImage').src = game.image;
     document.getElementById('modalTitle').textContent = game.name;
     document.getElementById('modalDescription').textContent = game.description;
-    
-    // CORREÇÃO DO PROBLEMA DE DOWNLOAD:
-    // O evento de clique do botão é cancelado para evitar que o link abra imediatamente.
-    // Em vez disso, chamamos a função `showSubscribeModal`.
+
     const downloadButton = document.getElementById('downloadButton');
     downloadButton.onclick = (e) => {
-        e.preventDefault(); // Impede a ação padrão do link
-        showSubscribeModal(game.downloadLink);
+        e.preventDefault();
+        handleDownload(game.downloadLink);
     };
-
-    const details = document.getElementById('modalDetails');
-    details.innerHTML = `
-        <div class="detail-item">
-            <div class="detail-label">Gênero</div>
-            <div class="detail-value">${game.genre}</div>
-        </div>
-        <div class="detail-item">
-            <div class="detail-label">Tamanho</div>
-            <div class="detail-value">${game.size}</div>
-        </div>
-        <div class="detail-item">
-            <div class="detail-label">Versão</div>
-            <div class="detail-value">${game.version}</div>
-        </div>
-        <div class="detail-item">
-            <div class="detail-label">Desenvolvedor</div>
-            <div class="detail-value">${game.developer}</div>
-        </div>
-        <div class="detail-item">
-            <div class="detail-label">Lançamento</div>
-            <div class="detail-value">${new Date(game.releaseDate).toLocaleDateString('pt-BR')}</div>
-        </div>
-    `;
-    
-    const modalBody = document.querySelector('#gameModal .modal-body');
-    let feedbackDiv = document.getElementById('gameFeedbackNotice');
-    if (!feedbackDiv) {
-        feedbackDiv = document.createElement('div');
-        feedbackDiv.id = 'gameFeedbackNotice';
-        feedbackDiv.className = 'game-feedback-notice';
-        modalBody.appendChild(feedbackDiv);
-    }
-    feedbackDiv.innerHTML = `
-        <small style="color: #636e72; font-size: 0.9rem;">
-            Encontrou um link quebrado ou imagem ausente neste jogo?
-            <br>
-            Por favor, <a href="https://discord.gg/tN8vr5Ea5X" target="_blank" style="color: #667eea; text-decoration: none; font-weight: bold;">avise-nos no Discord</a>!
-        </small>
-    `;
 
     gameModal.style.display = 'block';
 }
-
 // Função para fechar o modal de detalhes do jogo
 function closeGameModal() {
     gameModal.style.display = 'none';
@@ -357,3 +312,63 @@ if (searchInput && highlightsSection) {
 
 // Inicializar a aplicação
 window.onload = loadGames;
+
+// Definições
+const MAX_FREE_DOWNLOADS = 3;
+const ACCESS_KEY = "121215"; // chave fixa, pode mudar
+let pendingDownload = null; // guarda o link enquanto valida
+
+// Verifica se usuário já tem acesso autorizado
+function hasAccess() {
+    return localStorage.getItem("downloadKey") === ACCESS_KEY;
+}
+
+// Conta quantos downloads já foram feitos
+function getDownloadCount() {
+    return parseInt(localStorage.getItem("downloadCount") || "0", 10);
+}
+
+function incrementDownloadCount() {
+    const count = getDownloadCount() + 1;
+    localStorage.setItem("downloadCount", count);
+}
+
+// Mostra modal para chave de acesso
+function showKeyModal(downloadLink) {
+    pendingDownload = downloadLink;
+    const modal = document.getElementById("keyModal");
+    modal.style.display = "flex";
+}
+
+// Valida chave digitada
+function validateKey() {
+    const input = document.getElementById("keyInput").value.trim();
+    if (input === ACCESS_KEY) {
+        localStorage.setItem("downloadKey", input); // grava a chave em vez de "true"
+        document.getElementById("keyModal").style.display = "none";
+        if (pendingDownload) {
+            window.open(pendingDownload, "_blank");
+            pendingDownload = null;
+        }
+    } else {
+        alert("Chave incorreta! Peça no Discord.");
+    }
+}
+
+// Função para iniciar download com controle
+function handleDownload(downloadLink) {
+    if (hasAccess()) {
+        // Já autorizado, baixa direto
+        window.open(downloadLink, "_blank");
+        return;
+    }
+
+    const count = getDownloadCount();
+    if (count < MAX_FREE_DOWNLOADS) {
+        incrementDownloadCount();
+        window.open(downloadLink, "_blank");
+    } else {
+        // Bloqueia e pede chave
+        showKeyModal(downloadLink);
+    }
+}
