@@ -314,7 +314,7 @@ if (searchInput && highlightsSection) {
 window.onload = loadGames;
 
 // Definições
-const MAX_FREE_DOWNLOADS = 3;
+const MAX_FREE_DOWNLOADS = 2;
 const ACCESS_KEY = "121215"; // chave fixa, pode mudar
 let pendingDownload = null; // guarda o link enquanto valida
 
