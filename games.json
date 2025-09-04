@@ -1,5 +1,5 @@
 {
-  "version": 12,
+  "version": 13,
   "games": [
     {
       "name": "Fran Bow",
@@ -935,6 +935,42 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/6F2gJ8tKge/Aestheta.html",
+      "highlight": false
+    },
+    {
+      "name": "Gauge Of Rage",
+      "description": "Gauge Of Rage é um jogo de tiro de cima para baixo frenético e sangrento no estilo arcade que desafia você a desenvolver e liberar sua raiva contra um ataque interminável de mortos-vivos! Observação: requer dois bastões!",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/gaugeofrage/screenshot.png",
+      "genre": "",
+      "size": "119Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/lRfqPdQvge/Gauge_Of_Rage.html",
+      "highlight": false
+    },
+    {
+      "name": "Isles of Sea and Sky",
+      "description": "Uma fantástica aventura de quebra-cabeça oceânica e de mundo aberto. Resolva quebra-cabeças de blocos inovadores enquanto desenterra uma história misteriosa e desbloqueie poderes que oferecem mais opções de como você escolhe progredir pelas enigmáticas Ilhas do Mar e do Céu!",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/iosas/screenshot.png",
+      "genre": "",
+      "size": "170Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/o7_aGrwZge/Isles_of_Sea_and_Sky.html",
+      "highlight": false
+    },
+    {
+      "name": "Hexen2",
+      "description": "Hexen II é um jogo de tiro em primeira pessoa de fantasia sombria desenvolvido pela Raven Software e publicado pela id software. Portal of Praevus apresenta novos níveis, novos inimigos e uma nova classe de personagem jogável, The Demoness.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/hexen2/screenshot.jpg",
+      "genre": "",
+      "size": "44Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/hfxXCCsIge/hexen2.html",
       "highlight": false
     }
   ]
