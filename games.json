@@ -1,5 +1,5 @@
 {
-  "version": 16,
+  "version": 17,
   "games": [
     {
       "name": "Fran Bow",
@@ -26,7 +26,7 @@
       "highlight": false
     },
     {
-      "name": "Iconoclasts",
+      "name": "Iconoclasts (PTBR)",
       "description": "Um jogo de plataforma com jogabilidade divertida e maluca. Recomendado apenas para dispositivos com resolução de 640x480 ou superior.",
       "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/iconoclasts/screenshot.jpg",
       "genre": "Ação, Aventura, Metroidvania",
@@ -86,7 +86,7 @@
       "highlight": false
     },
     {
-      "name": "StardewValley (1.6)",
+      "name": "StardewValley (1.6) (PTBR)",
       "description": "Stardew Valley é um RPG aberto sobre a vida no campo! Você herdou a antiga fazenda do seu avô em Stardew Valley. Munido de ferramentas usadas e algumas moedas, você parte para começar uma nova vida.",
       "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/stardewvalley/screenshot.jpg",
       "genre": "RPG, Simulação",
@@ -338,7 +338,7 @@
       "highlight": false
     },
     {
-      "name": "To The Moon",
+      "name": "To The Moon (PTBR)",
       "description": "Lindo RPG focado em uma história emocionante, disponível em PTBR",
       "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/to_the_moon/screenshot.jpg",
       "genre": "RPG",
@@ -566,7 +566,7 @@
       "highlight": false
     },
     {
-      "name": "Dust: An Elysian Tail",
+      "name": "Dust: An Elysian Tail (PTBR)",
       "description": "Assuma a aparência da impetuosa guardião da espada nimbat do Dust: An Elysian Tail com esta máscara da Fidget.",
       "image": "https://hot.game/uploads/media/poster_game/0001/03/cb5a93312025db095ccc7c53bffbec510782e0fc.jpeg",
       "genre": "Action",
@@ -734,7 +734,7 @@
       "highlight": false
     },
     {
-      "name": "Kingdom Shell",
+      "name": "Kingdom Shell (PTBR)",
       "description": "Kingdom Shell é um jogo de plataforma 2D com elementos de soulslike e metroidvania, ambientado em um reino ameaçado por criaturas pesadelo. O jogador assume o papel de Elias, um meio-sangue que deve proteger o reino após a concha mágica que o protegia ser destruída.",
       "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1154090/capsule_616x353.jpg?t=1745491282",
       "genre": "",
