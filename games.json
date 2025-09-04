@@ -1,5 +1,5 @@
 {
-  "version": 15,
+  "version": 16,
   "games": [
     {
       "name": "Fran Bow",
@@ -950,7 +950,7 @@
       "highlight": false
     },
     {
-      "name": "Isles of Sea and Sky",
+      "name": "Isles of Sea and Sky (PTBR)",
       "description": "Uma fantástica aventura de quebra-cabeça oceânica e de mundo aberto. Resolva quebra-cabeças de blocos inovadores enquanto desenterra uma história misteriosa e desbloqueie poderes que oferecem mais opções de como você escolhe progredir pelas enigmáticas Ilhas do Mar e do Céu!",
       "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/iosas/screenshot.png",
       "genre": "",
