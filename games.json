@@ -1,5 +1,5 @@
 {
-  "version": 18,
+  "version": 19,
   "games": [
     {
       "name": "Fran Bow",
@@ -971,6 +971,18 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/tKBUEMXcjq/hexen.html",
+      "highlight": false
+    },
+    {
+      "name": "Postal (1997)",
+      "description": "Postal é um jogo de tiro isométrico em terceira pessoa, lançado em 1997 pela desenvolvedora Running With Scissors. Ganhou notoriedade por seu estilo polêmico e humor negro, misturando ação intensa com temas satíricos.\nNo jogo, o jogador assume o papel de um personagem conhecido apenas como “Postal Dude”, que aparentemente sofre de distúrbios mentais e parte em uma onda de violência pela cidade. A jogabilidade é baseada em enfrentar inimigos em fases cheias de ação, utilizando diferentes armas para sobreviver.",
+      "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/232770/ss_8d7652020c8193004741034ef513e7595e59cdcb.1920x1080.jpg?t=1726332202",
+      "genre": "",
+      "size": "304,4Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/DueID-Rcfa/POSTAL.html",
       "highlight": false
     }
   ]
