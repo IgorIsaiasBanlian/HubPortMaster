@@ -1,5 +1,5 @@
 {
-  "version": 19,
+  "version": 20,
   "games": [
     {
       "name": "Fran Bow",
@@ -983,6 +983,18 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/DueID-Rcfa/POSTAL.html",
+      "highlight": false
+    },
+    {
+      "name": "DirtyCop",
+      "description": "Você é um policial que, por meio de sua investigação, terá que fazer escolhas morais. Você pode prender os suspeitos ou ficar chapado* com o estoque deles enquanto os executa à queima-roupa. As escolhas que você fizer mudarão o final e a forma como você joga.",
+      "image": "https://img.itch.zone/aW1hZ2UvMTU4NzI2MC85Mjc4NDY2LnBuZw==/original/CdqzM5.png",
+      "genre": "",
+      "size": "163Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/VN3gvIIaku/DirtyCop.html",
       "highlight": false
     }
   ]
