@@ -1,5 +1,5 @@
 {
-  "version": 20,
+  "version": 21,
   "games": [
     {
       "name": "Fran Bow",
@@ -995,6 +995,18 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/VN3gvIIaku/DirtyCop.html",
+      "highlight": false
+    },
+    {
+      "name": "Strikey Sisters",
+      "description": "Diga olá a um tema de fantasia ação arcade quebra-tijolos! Apresentando personagens fofos, humor bobo, magia poderosa, chefes malucos e até modo cooperativo local para 2 jogadores!",
+      "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/643880/header.jpg?t=1725009289",
+      "genre": "",
+      "size": "65.7Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/QgRInnPUfa/strikeysisters.html",
       "highlight": false
     }
   ]
