@@ -1,5 +1,5 @@
 {
-  "version": 21,
+  "version": 22,
   "games": [
     {
       "name": "Fran Bow",
@@ -1007,6 +1007,18 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/QgRInnPUfa/strikeysisters.html",
+      "highlight": false
+    },
+    {
+      "name": "Flynn: Son of Crimson",
+      "description": "A pacífica e bela ilha de Rosantica está mais uma vez sob a ameaça de um mal implacável. A barreira mágica entre Rosantica e o Flagelo começou a se romper, permitindo que criaturas perigosas lentamente se infiltrem novamente para tentar dominar a ilha. Flynn se depara com essa invasão e descobre que precisa se opor ao Flagelo para impedir que ele se espalhe por Rosantica. Acompanhado por seu companheiro mítico Dex, o Espírito Guardião da Terra, Flynn será desafiado pelo mal do Flagelo e seu poderoso senhor.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/flynnsoc/screenshot.png",
+      "genre": "",
+      "size": "84,4Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/w5-Qvwxafa/Flynn_Son_of_Crimson.html",
       "highlight": false
     }
   ]
