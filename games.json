@@ -1,5 +1,5 @@
 {
-  "version": 22,
+  "version": 23,
   "games": [
     {
       "name": "Fran Bow",
@@ -1019,6 +1019,18 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/w5-Qvwxafa/Flynn_Son_of_Crimson.html",
+      "highlight": false
+    },
+    {
+      "name": "Sneks",
+      "description": "Uma versão do jogo da cobrinha para relaxar no estilo puzzle",
+      "image": "https://github.com/Pidiotto/HubPortMaster/blob/main/img/cover.png?raw=true",
+      "genre": "",
+      "size": "4,7Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/T-YBPjt1ku/sneks.html",
       "highlight": false
     }
   ]
