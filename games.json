@@ -1,5 +1,5 @@
 {
-  "version": 23,
+  "version": 24,
   "games": [
     {
       "name": "Fran Bow",
@@ -1031,6 +1031,42 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/T-YBPjt1ku/sneks.html",
+      "highlight": false
+    },
+    {
+      "name": "Pokémon Decay",
+      "description": "Pokémon Decay é considerado o melhor das quatro primeiras gerações.\nO objetivo é dar ao jogador o máximo de nostalgia possível, referindo-se às histórias dos jogos antigos.",
+      "image": "https://i.imgur.com/k6lh1qg.gif",
+      "genre": "",
+      "size": "467Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/NQj9ds37ku/decay.html",
+      "highlight": false
+    },
+    {
+      "name": "Fatebreak",
+      "description": "Fatebreak é um jogo de cartas casual, inspirado em fantasia, com estratégia e azar. As cartas são usadas para batalhar contra oponentes até que reste apenas um jogador. Os jogadores começam o jogo com cinco \"pontos de vida\" e recebem uma mão de quatro cartas. O jogo avança no sentido horário, passando pelas fases de \"invocação\", \"troca\" e \"batalha\", até que todos os jogadores, exceto um, sejam eliminados e um vencedor seja coroado.",
+      "image": "https://img.itch.zone/aW1hZ2UvMTA4NTAyMi82MzM2NDQyLmdpZg==/347x500/FHRZNC.gif",
+      "genre": "",
+      "size": "14,2Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/hKWi5pAzku/fatebreak.html",
+      "highlight": false
+    },
+    {
+      "name": "PyroMind",
+      "description": "O quebra-cabeça mais implacável que você já jogou, PyroMind é um jogo baseado em turnos e em tempo real, cheio de bombas, explosões e fugas por pouco!\nJogue sozinho, exploda seu amigo ou desafie um bot em uma dimensão única, onde tudo explode e um pequeno erro pode explodi-lo em pedacinhos.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/pyromind/screenshot.png",
+      "genre": "",
+      "size": "56Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/VVyHYvG3ge/Pyromind.html",
       "highlight": false
     }
   ]
