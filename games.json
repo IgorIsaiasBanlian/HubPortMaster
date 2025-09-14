@@ -1,5 +1,5 @@
 {
-  "version": 24,
+  "version": 25,
   "games": [
     {
       "name": "Fran Bow",
@@ -1067,6 +1067,18 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/VVyHYvG3ge/Pyromind.html",
+      "highlight": false
+    },
+    {
+      "name": "The Treehouse Man",
+      "description": "Outrora reis da floresta pacífica, as crianças enfrentam tempos difíceis, pois uma corrupção horrível tomou conta da sua casa. Ainda mais debilitante do que os perigos da floresta é o silêncio do Homem da Casa na Árvore. As crianças sempre O serviram com lealdade e diligência, mas agora, em seu momento de necessidade, Ele permanece em silêncio. Recém-batizado no grupo, sua tarefa é levar o último barco sagrado até a árvore do mundo, no topo da qual Ele supostamente vive. Você deve revelar a verdade e salvar seus irmãos e irmãs antes que o silêncio do alto os mate.",
+      "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/841660/ss_33f1e7aa70f6d97d00932717207d8b0b5c8c6801.1920x1080.jpg?t=1573752606",
+      "genre": "",
+      "size": "60Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/9oQfXuzNfa/treehouse.html",
       "highlight": false
     }
   ]
