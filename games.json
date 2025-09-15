@@ -1,5 +1,5 @@
 {
-  "version": 27,
+  "version": 28,
   "games": [
     {
       "name": "Fran Bow",
@@ -1103,6 +1103,18 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/pwv8OehLjq/Letrigma.html",
+      "highlight": false
+    },
+    {
+      "name": "Jack Axe (PTBR)",
+      "description": "O nome dela é Jack. Ela tem um machado. Ela é Jack Axe.\nJunte-se às irmãs Jack em uma aventura em mundo aberto 2D, jogando sozinho ou multiplayer! Enfrente uma variedade de desafios de plataformas e utilize sua capacidade de arremessar machados para explorar o mundo único de Jack. Testemunhe a saga de uma jovem quebrando tabu, armando-se e assumindo um \"trabalho de homem\", apesar dos protestos de um deus irado nessa fusão de mitologia nórdica e filipina.",
+      "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/985780/ss_64928ce83f9e572883a3c690d0261bd57c862f79.600x338.jpg?t=1752567814",
+      "genre": "",
+      "size": "63Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/KMd73t1yfa/JackAxe.html",
       "highlight": false
     }
   ]
