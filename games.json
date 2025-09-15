@@ -1,5 +1,5 @@
 {
-  "version": 26,
+  "version": 27,
   "games": [
     {
       "name": "Fran Bow",
@@ -1091,6 +1091,18 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/BKaZ9luAfa/BLOWFLY2_OVERLIMIT.html",
+      "highlight": false
+    },
+    {
+      "name": "Letrigma(PTBR)",
+      "description": "Famoso Wordle feito pelo brasileiro José Peterson Menezes Machado.\nJogo de adivinhação da palavra com 5 letras viciante!",
+      "image": "https://github.com/Pidiotto/HubPortMaster/blob/main/img/letrigma.png?raw=true",
+      "genre": "",
+      "size": "12Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/pwv8OehLjq/Letrigma.html",
       "highlight": false
     }
   ]
