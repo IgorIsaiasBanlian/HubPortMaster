@@ -1,5 +1,5 @@
 {
-  "version": 29,
+  "version": 30,
   "games": [
     {
       "name": "Fran Bow",
@@ -1127,6 +1127,18 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/0L1aGqbJku/Unciv.html",
+      "highlight": false
+    },
+    {
+      "name": "Cursed Castilla (Maldita Castilla EX)",
+      "description": "Cursed Castilla (Maldita Castilla EX) é um jogo de plataforma e ação arcade repleto de criaturas de mitos medievais da Espanha e do resto da Europa, bem como de romances de cavalaria. A versão estendida do clássico Maldita Castilla, originalmente criado pelo estúdio independente Locomalito.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/cursedcastilla/screenshot.png",
+      "genre": "",
+      "size": "110Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/OMSt6aLPjq/cursedcastilla.html",
       "highlight": false
     }
   ]
