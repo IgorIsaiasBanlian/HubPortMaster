@@ -1,5 +1,5 @@
 {
-  "version": 30,
+  "version": 31,
   "games": [
     {
       "name": "Fran Bow",
@@ -1139,6 +1139,18 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/OMSt6aLPjq/cursedcastilla.html",
+      "highlight": false
+    },
+    {
+      "name": "Chao Resort Island",
+      "description": "Os jogadores podem interagir com seu Chao por meio de diversas atividades, como alimentá-lo com frutas diferentes para aumentar vários atributos, usar brinquedos e objetos interativos para aumentar a inteligência e envolvê-lo em Jogos Chao para testar suas habilidades.",
+      "image": "https://github.com/Pidiotto/HubPortMaster/blob/main/img/chao.png?raw=true",
+      "genre": "",
+      "size": "78Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/xmogxCQGge/chaoresortisland.html",
       "highlight": false
     }
   ]
