@@ -1,5 +1,5 @@
 {
-  "version": 31,
+  "version": 32,
   "games": [
     {
       "name": "Fran Bow",
@@ -230,8 +230,8 @@
       "highlight": false
     },
     {
-      "name": "TMNT: Shredder's Revenge",
-      "description": "",
+      "name": "TMNT: Shredder's Revenge (PTBR)",
+      "description": "Shredder's Revenge é um jogo de ação de rolagem lateral com um estilo de arte pixelado. O jogador assume o controle de Leonardo, Donatello, Michelangelo, Raphael, April O'Neil, Master Splinter e do personagem desbloqueável Casey Jones enquanto eles combatem oponentes como Foot Clan, Krang, Bebop e Rocksteady, e Shredder em locais que vão desde esgotos da cidade de Nova York até Dimensão X.",
       "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/tmntsr/screenshot.png",
       "genre": "Luta",
       "size": "-",
@@ -1151,6 +1151,18 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/xmogxCQGge/chaoresortisland.html",
+      "highlight": false
+    },
+    {
+      "name": "Fares (Patrocinadores Discord)",
+      "description": "Junte-se ao caçador de tesouros de cabelos azuis Fares na aventura de sua vida neste jogo de plataforma de 16 bits de inspiração retrô. Descubra tesouros e artefatos escondidos enquanto viaja por terras perigosas de uma civilização perdida. Você pode completar a coleção de tarifas? Veja se você consegue nessa aventura colorida e fofa!",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/fares/screenshot.png",
+      "genre": "",
+      "size": "190Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "",
       "highlight": false
     }
   ]
