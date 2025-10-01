@@ -1,5 +1,5 @@
 {
-  "version": 32,
+  "version": 33,
   "games": [
     {
       "name": "Fran Bow",
@@ -1163,6 +1163,18 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "",
+      "highlight": false
+    },
+    {
+      "name": "Psebay",
+      "description": "Jogo de motinho horizontal com gráfico de Limbo",
+      "image": "https://github.com/Pidiotto/HubPortMaster/blob/main/img/psebay.png?raw=true",
+      "genre": "",
+      "size": "55Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/RA7Am5KTku/Psebay.html",
       "highlight": false
     }
   ]
