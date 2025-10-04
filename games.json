@@ -1,5 +1,5 @@
 {
-  "version": 35,
+  "version": 36,
   "games": [
     {
       "name": "Fran Bow",
@@ -1199,6 +1199,18 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/s2W1iUL8ge/octoberpanic.html",
+      "highlight": false
+    },
+    {
+      "name": "Blazing Beaks",
+      "description": "Roguelita - onde muita ganância pode ser fatal. Um mundo colorido com pássaros armados abrindo caminho através de pilhas de mutantes, monstros e criaturas assustadoras. Muitos mistérios para desvendar, segredos para descobrir e níveis para explorar. Requer bastões gêmeos!",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/blazingbeaks/screenshot.png",
+      "genre": "",
+      "size": "183MB",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/ICtgNuzKfa/Blazing_Beaks.html",
       "highlight": false
     }
   ]
