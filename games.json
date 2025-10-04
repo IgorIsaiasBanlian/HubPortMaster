@@ -1,5 +1,5 @@
 {
-  "version": 33,
+  "version": 34,
   "games": [
     {
       "name": "Fran Bow",
@@ -1175,6 +1175,18 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/RA7Am5KTku/Psebay.html",
+      "highlight": false
+    },
+    {
+      "name": "Star vs. the Game",
+      "description": "Star vs. the Game é um cruzamento entre ação beat-em up de cima para baixo e plataforma 2 D. Jogue como Star e Marco e lute contra uma ameaça além da realidade!",
+      "image": "https://img.itch.zone/aW1hZ2UvNDQyMDQwLzIyMjQ3MTIucG5n/original/Qb85CY.png",
+      "genre": "",
+      "size": "76Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/DMRyezURku/starvsthegame.html",
       "highlight": false
     }
   ]
