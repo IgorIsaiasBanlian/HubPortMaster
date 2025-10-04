@@ -1,5 +1,5 @@
 {
-  "version": 34,
+  "version": 35,
   "games": [
     {
       "name": "Fran Bow",
@@ -1187,6 +1187,18 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/DMRyezURku/starvsthegame.html",
+      "highlight": false
+    },
+    {
+      "name": "October Panic",
+      "description": "Um jogo de plataforma estilo arcade com cinco níveis e sem salvamento/carregamento. Uma pequena sacola de doces ou travessuras cheia até a borda com guloseimas e truques.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/octoberpanic/screenshot.png",
+      "genre": "",
+      "size": "251Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/s2W1iUL8ge/octoberpanic.html",
       "highlight": false
     }
   ]
