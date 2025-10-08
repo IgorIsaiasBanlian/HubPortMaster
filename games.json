@@ -1,5 +1,5 @@
 {
-  "version": 36,
+  "version": 37,
   "games": [
     {
       "name": "Fran Bow",
@@ -1211,6 +1211,114 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/ICtgNuzKfa/Blazing_Beaks.html",
+      "highlight": false
+    },
+    {
+      "name": "OpenRA",
+      "description": "OpenRA é um projeto de código aberto que recria e moderniza jogos clássicos de estratégia em tempo real, como Red Alert, Command & Conquer e Dune 2000.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/openra/screenshot.png",
+      "genre": "",
+      "size": "",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://github.com/PortsMaster/PortMaster-New/releases/download/2025-10-07_1437/openra.zip",
+      "highlight": false
+    },
+    {
+      "name": "Slash/Jump",
+      "description": "Como você se posiciona se caminhar e pular não são uma opção? Com uma espada, é claro! Salte e corte seu caminho através deste jogo de plataforma de precisão curto e doce, controlado exclusivamente!",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/slashjump/screenshot.png",
+      "genre": "",
+      "size": "",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://github.com/PortsMaster/PortMaster-New/releases/download/2025-10-07_1437/slashjump.zip",
+      "highlight": false
+    },
+    {
+      "name": "Guardian Sphere",
+      "description": "Um jogo de tiro rápido onde você passa a vida ganhando pontos como moeda para comprar upgrades. Fortaleça seu Guardião e repele ondas de invasores em uma história de defensores detentores de energia lutando contra uma ameaça alienígena.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/guardiansphere/screenshot.png",
+      "genre": "",
+      "size": "",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://github.com/PortsMaster/PortMaster-New/releases/download/2025-10-07_1437/guardiansphere.zip",
+      "highlight": false
+    },
+    {
+      "name": "Crazy Cook",
+      "description": "Cozinhe hambúrgueres e jogue-os na boca de seus clientes impacientes. Mas tenha cuidado! Eles têm preferências específicas. Se você alimentar um vegetariano com carne bovina, ele vai vomitar de volta na sua cara! Seu objetivo é ganhar dinheiro suficiente antes que o tempo acabe. Cozinhe rápido e torne-se o melhor chef!",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/crazycook/screenshot.png",
+      "genre": "",
+      "size": "",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://github.com/PortsMaster/PortMaster-New/releases/download/2025-10-07_1437/crazycook.zip",
+      "highlight": false
+    },
+    {
+      "name": "Holy Shit",
+      "description": "Navegue por um labirinto de mecanismos travessos de parques onde bolas de esterco são seus principais aliados. Planeje cuidadosamente a ordem de coleta, as rotas de movimento e o tempo de fusão para encontrar a solução ideal no caos.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/holyshit/screenshot.png",
+      "genre": "",
+      "size": "",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://github.com/PortsMaster/PortMaster-New/releases/download/2025-10-04_1030/holyshit.zip",
+      "highlight": false
+    },
+    {
+      "name": "Pinball Crush",
+      "description": "Um aconchegante jogo de pinball inspirado no GBA com um sistema de progresso de simulador de namoro. Atingir alvos específicos para acessar cenas e eventos com seu par. Existem 300+ eventos únicos para explorar, então você sempre terá algo novo!",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/pinballcrush/screenshot.png",
+      "genre": "",
+      "size": "",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://github.com/PortsMaster/PortMaster-New/releases/download/2025-10-04_1030/pinballcrush.zip",
+      "highlight": false
+    },
+    {
+      "name": "Warzone 2100",
+      "description": "Warzone 2100 é um jogo de estratégia 3D em tempo real de código aberto com uma campanha single player baseada em história, multijogador online, escaramuça offline e muito mais. Comande as forças do Projeto em uma batalha para reconstruir o mundo depois que a humanidade foi quase destruída por mísseis nucleares.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/warzone2100/screenshot.png",
+      "genre": "",
+      "size": "",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://github.com/PortsMaster/PortMaster-New/releases/download/2025-09-08_0954/warzone2100.zip",
+      "highlight": false
+    },
+    {
+      "name": "Tutoretta's Easy Quest",
+      "description": "Curto jogo de Dungeon Crawler em primeira pessoa com PixelArt e gráficos semelhantes aos do Paper.",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/tutoretta/screenshot.png",
+      "genre": "",
+      "size": "",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://github.com/PortsMaster/PortMaster-New/releases/download/2025-08-14_1207/tutoretta.zip",
+      "highlight": false
+    },
+    {
+      "name": "Nazi Zombies",
+      "description": "Nazi Zombies: Portable é um remake de Call of Duty: Zombies rodando no motor Quake (1996)",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/nazizombies/screenshot.jpg",
+      "genre": "",
+      "size": "",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://github.com/PortsMaster/PortMaster-New/releases/download/2025-09-22_1747/nazizombies.zip",
       "highlight": false
     }
   ]
