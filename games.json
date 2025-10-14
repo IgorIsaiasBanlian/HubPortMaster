@@ -1,5 +1,5 @@
 {
-  "version": 38,
+  "version": 39,
   "games": [
     {
       "name": "Fran Bow",
@@ -1319,6 +1319,18 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://github.com/PortsMaster/PortMaster-New/releases/download/2025-09-22_1747/nazizombies.zip",
+      "highlight": false
+    },
+    {
+      "name": "Max Payne",
+      "description": "Max Payne é um homem que não tem nada a perder na violenta e fria noite urbana. Policial disfarçado fugitivo acusado de assassinato, caçado por policiais e pela máfia, Max é um homem de costas contra a parede, travando uma batalha que não pode esperar vencer. Max Payne é um jogo implacável baseado em história sobre um homem no limite, lutando para limpar seu nome enquanto luta para descobrir a verdade sobre sua família morta em meio a uma miríade de reviravoltas na trama e bandidos distorcidos nas entranhas sujas de Nova York durante a pior nevasca do século.",
+      "image": "https://image.api.playstation.com/cdn/UP1004/CUSA03513_00/lrHNhklky2FFYSfvCDjUtRH5AphkmwYk.png?w=620&thumb=false",
+      "genre": "",
+      "size": "623Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/OX2kLRPtku/MaxPayne.html",
       "highlight": false
     }
   ]
