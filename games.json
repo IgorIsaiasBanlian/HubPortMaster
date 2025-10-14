@@ -1,5 +1,5 @@
 {
-  "version": 37,
+  "version": 38,
   "games": [
     {
       "name": "Fran Bow",
@@ -1162,8 +1162,8 @@
       "version": "",
       "developer": "",
       "releaseDate": "",
-      "downloadLink": "",
-      "highlight": false
+      "downloadLink": "https://www.4shared.com/zip/nlMQWYsgfa/fares.html",
+      "highlight": true
     },
     {
       "name": "Psebay",
