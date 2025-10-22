@@ -1,5 +1,5 @@
 {
-  "version": 39,
+  "version": 40,
   "games": [
     {
       "name": "Fran Bow",
@@ -35,7 +35,7 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/rar/Z6NFcz7Rfa/Iconoclasts.html",
-      "highlight": true
+      "highlight": false
     },
     {
       "name": "Ocean'sHeart",
@@ -1331,6 +1331,30 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/OX2kLRPtku/MaxPayne.html",
+      "highlight": false
+    },
+    {
+      "name": "Hyper Light Drifter",
+      "description": "Ecos de um passado sombrio e violento ressoam por toda uma terra selvagem, impregnada de tesouros e sangue. Hyper Light Drifter é um RPG de ação e aventura no estilo dos melhores clássicos de 16 bits, com mecânicas e designs modernizados em uma escala muito maior.",
+      "image": "https://github.com/Pidiotto/HubPortMaster/blob/main/img/hyper.png?raw=true",
+      "genre": "",
+      "size": "284Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/gBNfCmkHjq/Hyper_Light_Drifter.html",
+      "highlight": false
+    },
+    {
+      "name": "Quest Of Graal",
+      "description": "BUSCA DE GRAAL é um jogo de corrida de plataforma multijogador! O objetivo é chegar ao final do nível e pegar a taça de ouro primeiro! Você pode jogar sozinho contra IA ou com até 4 jogadores em tela dividida.",
+      "image": "https://github.com/Pidiotto/HubPortMaster/blob/main/img/quest.png?raw=true",
+      "genre": "",
+      "size": "39Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/zip/PgZGudbpjq/Quest_of_Graal_DX.html",
       "highlight": false
     }
   ]
