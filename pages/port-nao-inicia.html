@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist: Port Não Inicia - HubPortMaster</title>
+    <link rel="stylesheet" href="../css/tutoriais.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <style>
+        .checklist-item {
+            background-color: #1c2330;
+            border: 1px solid #222938;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .checklist-item h3 {
+            margin-top: 0;
+            color: #6ab0ff;
+        }
+        .checklist-item code {
+            background-color: #0d121a;
+            border: 1px solid #222938;
+            padding: 2px 6px;
+            border-radius: 6px;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,"Liberation Mono","Courier New", monospace;
+        }
+        .checklist-image {
+            max-width: 100%;
+            border-radius: 6px;
+            margin-top: 15px;
+            border: 1px solid #222938;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="../index.html">🎮 HubPortMaster</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="../pages/tutoriais.html">Tutoriais</a></li>
+            <li><a href="../pages/sobre.html">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="page-content">
+            <h1 class="page-title">✅ Checklist: Meu Port Não Está Rodando no R36S?</h1>
+            <p>Se você está com problemas para iniciar um port no seu R36S, siga este guia rápido para verificar os pontos mais comuns que podem causar falhas.</p>
+
+            <div class="checklist-item">
+                <h3>1. Bibliotecas do PortMaster</h3>
+                <p>Confirme se as bibliotecas (libs) do PortMaster estão instaladas corretamente. Elas são essenciais para que os jogos funcionem.</p>
+                <p>Caminho esperado: <code>tools/Portmaster/libs</code></p>
+                <img src="../img/checklist-libs.png" alt="Print da pasta de bibliotecas do PortMaster" class="checklist-image">
+                <p><strong>Dica:</strong> O pacote completo com as bibliotecas está disponível em nosso canal do <a href="https://discord.gg/WX9Ye9Jmqa" target="_blank">Discord</a>.</p>
+            </div>
+
+            <div class="checklist-item">
+                <h3>2. Arquivos do Port</h3>
+                <p>Dentro da pasta <code>ports/</code>, verifique se a estrutura do jogo está correta:</p>
+                <ul>
+                    <li>O script de inicialização (<code>.sh</code>) do port deve estar presente.</li>
+                    <li>A pasta do jogo, com todos os seus arquivos, deve estar completa.</li>
+                </ul>
+                <img src="../img/checklist-arquivos-port.png" alt="Print da estrutura de arquivos do port" class="checklist-image">
+                <p><strong>Lembrete:</strong> Disponibilizamos diversos ports prontos para download aqui no <a href="../index.html">HubPortMaster</a> para facilitar sua vida!</p>
+            </div>
+
+            <div class="checklist-item">
+                <h3>3. Espaço Interno do Console</h3>
+                <p>Confirme se o seu R36S tem pelo menos <strong>500 MB de armazenamento interno livre</strong>.</p>
+                <img src="../img/checklist-espaco-interno.png" alt="Print mostrando o espaço interno do console" class="checklist-image">
+                <p><strong>Atenção:</strong> Alguns consoles clone vêm com memória interna reduzida, o que pode impedir a execução de vários ports que precisam de espaço para arquivos temporários.</p>
+            </div>
+        </div>
+
+        <!-- O footer pode ser adicionado aqui se desejar, seguindo o padrão dos outros arquivos -->
+        <div class="footer">
+            <div class="copyright">
+                <p>&copy; 2024 HubPortMaster. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
