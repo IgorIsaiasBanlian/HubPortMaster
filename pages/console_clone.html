@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificar Console Clone - HubPortMaster</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/clone_finder.css">
+    <style>
+        .tutorial-text {
+            background-color: rgba(28, 35, 48, 0.8); /* Fundo semitransparente para melhor contraste */
+            padding: 20px;
+            color: #ecf0f1; /* Cor do texto clara para melhor legibilidade */
+            border-radius: 8px;
+        }
+        .clone-table-container {
+            overflow-x: auto; /* Garante que a tabela seja rolável em telas pequenas */
+        }
+        .clone-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            color: #ecf0f1;
+            font-size: 0.95rem;
+        }
+        .clone-table th, .clone-table td {
+            border: 1px solid #4a627a;
+            padding: 12px 15px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .clone-table th {
+            background-color: #34495e;
+        }
+        .clone-table tr:nth-child(odd) {
+            background-color: #2c3e50;
+        }
+        .clone-thumbnail {
+            width: 100px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .clone-thumbnail:hover {
+            transform: scale(1.1);
+        }
+
+        /* Estilos para o Modal da Imagem */
+        .image-modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.9);
+        }
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(1);
+            transition: transform 0.3s ease;
+            cursor: zoom-in;
+            object-fit: contain;
+        }
+        .close-modal {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Barra de Navegação -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="../index.html">🎮 HubPortMaster</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="tutoriais.html">Tutoriais</a></li>
+            <li><a href="console_clone.html">Identificar Console</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="json_updater.html">Admin</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="clone-finder-container">
+            <h1 class="section-title">🕵️ Como Identificar seu Console Clone</h1>
+
+            <div class="tutorial-section">
+                <div class="tutorial-content">
+                    <div class="tutorial-text">
+                        <h2>Passo a Passo:</h2>
+                        <br/>
+                        <p>
+                            Muitos consoles portáteis "clone" são visualmente idênticos, mas usam placas-mãe (motherboards) diferentes. Identificar a placa correta é crucial para instalar o sistema (firmware) certo e evitar problemas.
+                        </p>
+                        <br/>
+                        <p>
+                            Abaixo listamos os modelos mais comuns e fáceis de reconhecer. Compare seu console com as imagens e descrições.
+                        </p>
+                        <br/>
+                        <p>
+                            <strong>Se não encontrou algo parecido com sua placa, entre no discord para ajuda.</strong> 
+                        </p>
+                        <br/>
+                        <p>
+                            <em>Ter um clone não é problema, apenas terá que adotar maneias específicas de configuração.</em>
+                        </p>
+                    </div>
+                    <div class="tutorial-image-container">
+                        <img src="../img/placaR36s.png" alt="Exemplo de código em uma placa de console" class="tutorial-image">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lista de clones reconhecíveis -->
+            <div class="clone-list-section">
+                <h2 class="section-title">🎮 Placas Mais Comuns</h2>
+                <div class="clone-table-container">
+                    <table class="clone-table">
+                        <thead>
+                            <tr>
+                                <th>Imagem</th>
+                                <th>Modelo</th>
+                                <th>Descrição e Diferenças</th>
+                                <th>Compatibilidade com ArkOS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="../img/boards/original.png" alt="Placa R36S Padrão" class="clone-thumbnail"></td>
+                                <td>R36S Padrão Original</td>
+                                <td>O original versão mais novas tem escrito 'WIFI' na placa para soldagem de modulo wifi.</td>
+                                <td>Melhor e mais fácil. Usa o DTB padrão (ex: <code>rk3326-r35s-linux.dtb</code>).</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/boards/soysauce.png" alt="Placa clone 'Molho de Soja'" class="clone-thumbnail"></td>
+                                <td>"Molho de Soja" (Soy Sauce)</td>
+                                <td>Clone popular que frequentemente usa apenas um chip de RAM. A principal diferença é a tela, que requer um DTB específico para funcionar, caso contrário, resulta na famosa "tela preta".</td>
+                                <td>Requer uma versão especial do ArkOS (como o ArkOS para Clones ou ArkOS4Clone) que inclui o DTB da sua tela para evitar a famosa tela preta.</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/boards/k36.png" alt="Console Kinhank K36" class="clone-thumbnail"></td>
+                                <td>Kinhank K36</td>
+                                <td>Possui design externo mais quadrado e ergonômico. Embora o hardware base (RK3326, 1GB RAM) seja similar, a tela e outros componentes são diferentes, exigindo um firmware próprio.</td>
+                                <td>Requer firmware específico (historicamente existiu um ArkOS para K36). O sistema operacional padrão costuma ser um EmuELEC mal otimizado.</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/boards/G800.png" alt="Console clone formato horizontal" class="clone-thumbnail"></td>
+                                <td>Clones GB.</td>
+                                <td>Começam com essa inscrição, precisam de um arquivo diferenciado dos demais</td>
+                                <td>Varia, mas consoles horizontais (como o R36H) podem ter pequenas diferenças de botões (como a falta do botão FN) que afetam o mapeamento no software.</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../img/boards/500mb.png" alt="Placa com 512MB de RAM" class="clone-thumbnail"></td>
+                                <td>Clones de 512 MB de RAM</td>
+                                <td>Versões mais antigas ou de baixo custo com metade da memória RAM. Isso torna a emulação de sistemas mais exigentes (como N64 e PSP) praticamente inviável.</td>
+                                <td>Funcionam com o SO customizado, mas o desempenho é limitado devido à falta de RAM.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- O Modal da Imagem -->
+    <div id="imageModal" class="image-modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- Rodapé -->
+    <div class="footer">
+        <div class="copyright">
+            <p>&copy; 2024 HubPortMaster. Todos os direitos reservados.</p>
+            <p>Os jogos e consoles listados pertencem aos seus respectivos desenvolvedores e editoras.</p>
+        </div>
+    </div>
+
+    <script>
+        // Pega o modal
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImage");
+        const thumbnails = document.getElementsByClassName("clone-thumbnail");
+        const closeModal = document.getElementsByClassName("close-modal")[0];
+
+        let isZoomed = false;
+
+        // Itera sobre todas as miniaturas e adiciona o evento de clique
+        for (let i = 0; i < thumbnails.length; i++) {
+            thumbnails[i].onclick = function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                modalImg.style.transform = 'translate(-50%, -50%) scale(1)';
+                modalImg.style.cursor = 'zoom-in';
+                isZoomed = false;
+            }
+        }
+
+        // Função para fechar o modal
+        function close() {
+            modal.style.display = "none";
+        }
+
+        // Eventos para fechar o modal
+        closeModal.onclick = close;
+        modal.onclick = function(event) {
+            if (event.target === modal) {
+                close();
+            }
+        };
+
+        // Evento de clique na imagem do modal para dar zoom
+        modalImg.onclick = function(event) {
+            event.stopPropagation(); // Impede que o clique feche o modal
+            isZoomed = !isZoomed;
+            this.style.transform = isZoomed ? 'translate(-50%, -50%) scale(2)' : 'translate(-50%, -50%) scale(1)';
+            this.style.cursor = isZoomed ? 'zoom-out' : 'zoom-in';
+        };
+    </script>
+
+</body>
+
+</html>
