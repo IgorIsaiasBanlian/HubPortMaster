@@ -1,5 +1,5 @@
 {
-  "version": 40,
+  "version": 41,
   "games": [
     {
       "name": "Fran Bow",
@@ -1355,6 +1355,18 @@
       "developer": "",
       "releaseDate": "",
       "downloadLink": "https://www.4shared.com/zip/PgZGudbpjq/Quest_of_Graal_DX.html",
+      "highlight": false
+    },
+    {
+      "name": "Return",
+      "description": "Retorne ao seu planeta natal após 200 anos de viagens espaciais nesta aventura atmosférica e voltada para a arte. Atire, corte e role através de inimigos perigosos e chefes antigos, compre itens e desbloqueie armas poderosas e explore sua casa desconhecida em busca de peças para consertar sua nave.\nNota: Funciona apenas com a versão Steam!",
+      "image": "https://raw.githubusercontent.com/PortsMaster/PortMaster-New/main/ports/return/screenshot.png",
+      "genre": "",
+      "size": "61Mb",
+      "version": "",
+      "developer": "",
+      "releaseDate": "",
+      "downloadLink": "https://www.4shared.com/rar/v3ceXyiLjq/Return.html",
       "highlight": false
     }
   ]
